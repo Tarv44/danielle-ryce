@@ -1,6 +1,6 @@
 import React from 'react';
 import {Route} from 'react-router-dom';
-import Header from './Header/Header';
+import Header from './NavBar/NavBar';
 import Landing from './Landing/Landing';
 import './App.css';
 

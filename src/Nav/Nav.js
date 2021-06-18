@@ -5,9 +5,9 @@ import styles from './Nav.module.css';
 const Nav = (props) => {
     return (
         <nav className={styles.nav}>
-            <NavLink to={'/projects'}>projects.</NavLink>
-            <NavLink to={'/about'}>about.</NavLink>
-            <NavLink to={'/contact'}>contact.</NavLink>
+            <NavLink className={styles.link} to={'/projects'}>projects.</NavLink>
+            <NavLink className={styles.link} to={'/about'}>about.</NavLink>
+            <NavLink className={styles.link} to={'/contact'}>contact.</NavLink>
         </nav>
     )
 }
