@@ -8,16 +8,16 @@
   max-width: 100%;
 }
 
-.container div {
+.container a {
   box-sizing: border-box;
   width: calc(50% - 19px);
   margin-bottom: 29px;
 }
 
-.container div:nth-child(odd) {
+.container a:nth-child(odd) {
   margin-right: 38px;
 }
 
-.container div:nth-last-child(-n+2) {
+.container a:nth-last-child(-n+2) {
   margin-bottom: 0;
 }
