@@ -1,5 +1,4 @@
 import React from 'react';
-import Pattern from '../images/header-pattern.svg';
 import Logo from '../images/header-logo.svg';
 import styles from './NavBar.module.css';
 import Nav from '../Nav/Nav';
@@ -9,9 +8,9 @@ const NavBar = (props) => {
     const contentStyle = path === '/' ? {justifyContent: 'flex-end'} : {justifyContent: 'space-between'}
     return (
         <header className={styles.header}>
-            <img className={styles.pattern} src={Pattern} />
+            <div className={styles.pattern}></div>
             <div className={styles.content} style={contentStyle}>
-                {path !== '/' ? <img className={styles.logo} src={Logo} /> : null}
+                {path !== '/' ? <img className={styles.logo} src={Logo} alt="Danielle Ryce logo" /> : null}
                 <Nav />
             </div>
         </header>

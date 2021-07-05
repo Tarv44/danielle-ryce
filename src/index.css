@@ -1,14 +1,9 @@
 html {
   --color-blue: rgb(33, 133, 197);
-  --op-color-blue: rgba(33, 133, 197, .9);
   --color-pink: rgb(245, 159, 162);
-  --op-color-pink: rgba(245, 159, 162, .9);
   --color-green: rgb(140, 188, 163);
-  --op-color-green: rgba(140, 188, 163, .9);
   --color-drk-purple: rgb(88, 87, 153);
-  --op-color-drk-purple: rgba(88, 87, 153, .9);
   --color-lgt-purple: rgb(89, 114, 183);
-  --op-color-lgt-purple: rgba(89, 114, 183, .9);
   --color-bg-grey: rgba(34, 132, 197, 0.075);
 }
 
@@ -32,4 +27,8 @@ code {
 
 a {
   text-decoration: none;
+}
+
+a:hover {
+  cursor: pointer;
 }

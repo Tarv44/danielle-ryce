@@ -1,0 +1,23 @@
+.links {
+  padding: 12px 0;
+  margin-bottom: 50px;
+}
+
+.links a {
+  text-decoration: underline;
+  margin-right: 25px;
+  font-size: 18px;
+}
+
+.links a:last-child {
+  margin-right: 0;
+}
+
+.pattern {
+  background-image: url('../images/footer-pattern.svg');
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100px;
+  width: 100%;
+}

@@ -11,24 +11,28 @@ const CardSect = () => {
         <CaseCard 
           color={'blue'}
           image={KausDevices}
+          alt=''
           title={'Kaus Insurance'}
           tagline={'Shopping for insurance doesn’t have to be painful.'}
         />
         <CaseCard 
           color={'purple'}
           image={Wayfarer}
+          alt=''
           title={'Kaus Insurance'}
           tagline={'Shopping for insurance doesn’t have to be painful.'}
         />
         <CaseCard 
           color={'pink'}
           image={Wayfarer}
+          alt=''
           title={'Kaus Insurance'}
           tagline={'Shopping for insurance doesn’t have to be painful.'}
         />
         <CaseCard 
           color={'green'}
           image={KausDevices}
+          alt=''
           title={'Kaus Insurance'}
           tagline={'Shopping for insurance doesn’t have to be painful.'}
         />

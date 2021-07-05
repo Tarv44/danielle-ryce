@@ -13,7 +13,7 @@ const CaseCard = (props) => {
   return (
     
     <Link style={{backgroundColor: colors[props.color]}} className={styles.card}>
-      <img className={styles.image} src={props.image} />
+      <img className={styles.image} src={props.image} alt={props.alt} />
       <div style={{backgroundColor: colors[props.color]}} className={styles.cover}>
         <h2>{props.title}</h2>
         <h4>{props.tagline}</h4>
