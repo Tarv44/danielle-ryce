@@ -1,7 +1,7 @@
 import React from 'react';
 import CaseCard from '../CaseCard/CaseCard';
-import KausDevices from '../images/kaus-devices.svg';
-import Wayfarer from '../images/iMac.svg'
+import KausDevices from '../../images/kaus-devices.svg';
+import Wayfarer from '../../images/iMac.svg'
 import styles from './CardSect.module.css';
 
 const CardSect = () => {

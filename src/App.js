@@ -1,8 +1,8 @@
 import React from 'react';
 import {Route} from 'react-router-dom';
-import Header from './NavBar/NavBar';
-import Landing from './Landing/Landing';
-import Footer from './Footer/Footer';
+import Header from './components/NavBar/NavBar';
+import Landing from './pages/Landing/Landing';
+import Footer from './components/Footer/Footer';
 import './App.css';
 
 const App = (props) => {

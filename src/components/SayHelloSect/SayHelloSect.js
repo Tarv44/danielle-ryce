@@ -1,8 +1,8 @@
 import React from 'react';
-import Arch from '../images/arch1.svg';
+import Arch from '../../images/arch1.svg';
 import {Link} from 'react-router-dom';
 import styles from './SayHelloSect.module.css';
-import gblStyles from '../global.module.css';
+import gblStyles from '../../global.module.css';
 
 const SayHelloSect = () => {
   return (

@@ -14,7 +14,7 @@
 }
 
 .pattern {
-  background-image: url('../images/footer-pattern.svg');
+  background-image: url('../../images/footer-pattern.svg');
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;

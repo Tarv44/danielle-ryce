@@ -1,6 +1,6 @@
 import React from 'react';
-import SEE from '../images/see-for-yourself.svg';
-import Arrow from '../images/arrow.svg';
+import SEE from '../../images/see-for-yourself.svg';
+import Arrow from '../../images/arrow.svg';
 import styles from './MissionSect.module.css';
 
 const Sect1 = () => {
