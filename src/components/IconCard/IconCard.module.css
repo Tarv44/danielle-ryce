@@ -1,0 +1,15 @@
+.card {
+  width: 250px;
+}
+
+.card h3 {
+  font-size: 32px;
+  color: var(--color-lgt-purple);
+  margin: 0;
+  margin-bottom: 12px;
+  text-transform: lowercase;
+}
+
+.card p {
+  font-size: 20px;
+}

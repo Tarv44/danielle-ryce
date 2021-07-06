@@ -1,0 +1,70 @@
+.sect1 {
+  background-color: var(--color-bg-grey);
+  padding: 64px 202px 52px;
+  font-size: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sect1text {
+  margin-bottom: 62px;
+}
+
+.purple {
+  text-decoration: underline var(--color-lgt-purple);
+}
+
+.purple:hover {
+  background-color: var(--color-lgt-purple);
+  color: #ffffff;
+}
+
+.blue {
+  text-decoration: underline var(--color-blue);
+}
+
+.blue:hover {
+  background-color: var(--color-blue);
+  color: #ffffff;
+}
+
+.pink {
+  text-decoration: underline var(--color-pink);
+}
+
+.pink:hover {
+  background-color: var(--color-pink);
+  color: #ffffff;
+}
+
+.green {
+  text-decoration: underline var(--color-green);
+}
+
+.green:hover {
+  background-color: var(--color-green);
+  color: #ffffff;
+}
+
+.arrow {
+  animation: bounce 2.7s linear  infinite  both;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0px);
+  }
+  10% {
+    transform: translateY(-15px);
+  }
+  20% {
+    transform: translateY(0px);
+  }
+  30% {
+    transform: translateY(-15px);
+  }
+  40% {
+    transform: translateY(0px);
+  }
+}

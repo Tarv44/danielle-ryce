@@ -1,0 +1,6 @@
+.bio {
+  text-align: left;
+  background-color: var(--color-bg-grey);
+  padding: 30px var(--padding-horiz);
+  font-size: 22px;
+}

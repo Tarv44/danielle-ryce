@@ -1,0 +1,4 @@
+.hr {
+  border-top: solid var(--color-blue) 10px;
+  margin: 0 5% 120px;
+}
