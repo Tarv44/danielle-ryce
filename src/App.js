@@ -1,9 +1,12 @@
 import React from 'react';
 import {Route} from 'react-router-dom';
 import Header from './components/NavBar/NavBar';
-import Landing from './pages/Landing/Landing';
 import Footer from './components/Footer/Footer';
 import './App.css';
+
+//pages
+import Landing from './pages/Landing/Landing';
+import About from './pages/About/About';
 
 const App = (props) => {
   console.log(props)
@@ -11,6 +14,7 @@ const App = (props) => {
     <div className="App">
       <Route path='/' component={Header} />
       <Route exact path='/' component={Landing} />
+      <Route exact path='/about' component={About} />
       <Footer />
     </div>
   );

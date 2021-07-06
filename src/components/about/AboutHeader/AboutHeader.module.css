@@ -1,0 +1,43 @@
+.aboutHeader {
+  text-align: left;
+  padding: 0 var(--padding-horiz);
+}
+
+.aboutHeader p {
+  font-size: 24px;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.text {
+  width: 52%;
+  margin-right: 3%;
+}
+
+.text h1 {
+  text-transform: uppercase;
+  color: var(--color-blue);
+  font-size: 64px;
+}
+
+.text p {
+  font-size: 32px;
+}
+
+.imgDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 45%;
+}
+
+.img {
+  margin-top: 30px;
+  width: 100%;
+}
+
+

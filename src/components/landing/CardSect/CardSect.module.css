@@ -1,0 +1,23 @@
+.sect {
+  padding: 98px 120px;
+}
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  max-width: 100%;
+}
+
+.container a {
+  box-sizing: border-box;
+  width: calc(50% - 19px);
+  margin-bottom: 29px;
+}
+
+.container a:nth-child(odd) {
+  margin-right: 38px;
+}
+
+.container a:nth-last-child(-n+2) {
+  margin-bottom: 0;
+}

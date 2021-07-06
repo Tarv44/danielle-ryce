@@ -1,8 +1,8 @@
 import React from 'react';
 import Banner from '../../images/landing-banner.svg';
-import MissionSect from '../../components/MissionSect/MissionSect';
-import CardSect from '../../components/CardSect/CardSect';
-import SayHelloSect from '../../components/SayHelloSect/SayHelloSect';
+import MissionSect from '../../components/landing/MissionSect/MissionSect';
+import CardSect from '../../components/landing/CardSect/CardSect';
+import SayHelloSect from '../../components/landing/SayHelloSect/SayHelloSect';
 import styles from './Landing.module.css';
 
 const Landing = () => {

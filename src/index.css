@@ -5,6 +5,7 @@ html {
   --color-drk-purple: rgb(88, 87, 153);
   --color-lgt-purple: rgb(89, 114, 183);
   --color-bg-grey: rgba(34, 132, 197, 0.075);
+  --padding-horiz: 17%;
 }
 
 body {
@@ -31,4 +32,9 @@ a {
 
 a:hover {
   cursor: pointer;
+}
+
+ol, ul {
+  list-style: none;
+  padding: 0;
 }

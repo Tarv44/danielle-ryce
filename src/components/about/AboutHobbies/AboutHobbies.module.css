@@ -1,0 +1,19 @@
+.hobbies {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 70px;
+}
+
+.hobbies ol {
+  display: flex;
+  margin-bottom: 65px;
+}
+
+.hobbies li {
+  margin-right: 100px
+}
+
+.hobbies li:last-child {
+  margin-right: 0;
+}
