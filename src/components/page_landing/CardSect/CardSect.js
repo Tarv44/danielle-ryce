@@ -6,7 +6,7 @@ import styles from './CardSect.module.css';
 
 const CardSect = () => {
   return (
-    <section className={styles.sect}>
+    <section id="projects" className={styles.sect}>
       <div className={styles.container}>
         <CaseCard 
           color={'blue'}

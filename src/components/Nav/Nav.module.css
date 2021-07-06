@@ -1,6 +1,7 @@
 .nav {
     display: flex;
     flex-direction: row;
+    margin: 19px 0;
 }
 
 .link {
@@ -8,4 +9,8 @@
     font-weight: 800;
     font-size: 28px;
     margin-right: 16px;
+}
+
+.active {
+    color: var(--color-blue)
 }
