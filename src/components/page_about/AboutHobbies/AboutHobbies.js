@@ -33,7 +33,7 @@ const AboutHobbies = () => {
           />
         </li>
       </ol>
-      <a className={gblStyles.button}>Say Hello!</a>
+      <a className={gblStyles.button} href="mailto:daniellekryce@gmail.com">Say Hello!</a>
     </section>
   )
 }

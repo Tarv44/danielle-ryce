@@ -12,7 +12,7 @@ const AboutHeader = () => {
           <p>I aim to encourage, excite, and amplify others’ voices through my outlets of fresh, welcoming design & imaginative, invigorating music.</p>
         </div>
         <div className={styles.imgDiv}>
-          <img className={styles.img} src={Danielle} alt="Profile picture of Danielle Ryce" />
+          <img className={styles.img} src={Danielle} alt="Danielle Ryce" />
         </div>
       </main>
       <p><i>(Pst, Danielle? I’d like to skip all this. Just give me the <u><a>resume</a></u>.)</i></p>

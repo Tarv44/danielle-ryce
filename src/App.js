@@ -7,6 +7,7 @@ import './App.css';
 //pages
 import Landing from './pages/Landing/Landing';
 import About from './pages/About/About';
+import Kaus from './pages/Kaus/Kaus';
 
 const App = (props) => {
   console.log(props)
@@ -15,6 +16,7 @@ const App = (props) => {
       <Route path='/' component={Header} />
       <Route exact path='/' component={Landing} />
       <Route exact path='/about' component={About} />
+      <Route exact path='/kaus' component={Kaus} />
       <Footer />
     </div>
   );
