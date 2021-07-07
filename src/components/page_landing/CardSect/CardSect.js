@@ -1,7 +1,9 @@
 import React from 'react';
 import CaseCard from '../../CaseCard/CaseCard';
 import KausDevices from '../../../images/kaus-devices.svg';
-import Wayfarer from '../../../images/iMac.svg'
+import RunkeeperDevices from '../../../images/runkeeper-devices.svg'
+import KellerDevices from '../../../images/keller-devices.svg'
+import IndicatorDevices from '../../../images/indicator-devices.svg'
 import styles from './CardSect.module.css';
 
 const CardSect = () => {
@@ -9,32 +11,36 @@ const CardSect = () => {
     <section id="projects" className={styles.sect}>
       <div className={styles.container}>
         <CaseCard 
-          color={'blue'}
-          image={KausDevices}
-          alt=''
-          title={'Kaus Insurance'}
-          tagline={'Shopping for insurance doesn’t have to be painful.'}
-        />
-        <CaseCard 
-          color={'purple'}
-          image={Wayfarer}
-          alt=''
-          title={'Kaus Insurance'}
-          tagline={'Shopping for insurance doesn’t have to be painful.'}
-        />
-        <CaseCard 
-          color={'pink'}
-          image={Wayfarer}
-          alt=''
-          title={'Kaus Insurance'}
-          tagline={'Shopping for insurance doesn’t have to be painful.'}
-        />
-        <CaseCard 
+          title={'Indicator'}
+          tagline={'Guiding artists in the right direction'}
+          link={'/indicator'}
           color={'green'}
-          image={KausDevices}
-          alt=''
+          image={IndicatorDevices}
+          alt='Cell phones with Indicator App on screen'
+        />
+        <CaseCard 
+          title={'Keller Strings'}
+          tagline={'An ecommerce site for New Orleans’ violin shop'}
+          link={'/keller-strings'}
+          color={'blue'}
+          image={KellerDevices}
+          alt='Laptop with Keller Strings on screen'
+        />
+        <CaseCard
           title={'Kaus Insurance'}
-          tagline={'Shopping for insurance doesn’t have to be painful.'}
+          tagline={'Shopping for insurance doesn’t have to be painful'}
+          link={'/kaus-insurance'} 
+          color={'pink'}
+          image={KausDevices}
+          alt='Cell phone and laptop with Kaus on screen'
+        />
+        <CaseCard
+          title={'Runkeeper'}
+          tagline={'Building runner’s strength one workout at a time'}
+          link={'/runkeeper'} 
+          color={'purple'}
+          image={RunkeeperDevices}
+          alt='Cell phones with Runkeeper app on screen'
         />
       </div>
     </section>
