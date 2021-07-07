@@ -1,0 +1,50 @@
+.process {
+  padding: 72px var(--cs-padding-horiz) 0;
+
+}
+
+
+
+.wheel {
+  position: relative;
+  margin: auto;
+  max-width: 540px;
+}
+
+.wheel img {
+  max-width: 100%;
+  animation: spin 20s linear infinite;
+} 
+
+.wheel h4 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 31px;
+  max-width: 146px;
+}
+
+.content {
+  text-align: left;
+}
+
+.content h3 {
+  text-transform: uppercase;
+  font-size: 45px;
+}
+
+.content p {
+  font-size: 28px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

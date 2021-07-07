@@ -4,8 +4,10 @@ html {
   --color-green: rgb(140, 188, 163);
   --color-drk-purple: rgb(88, 87, 153);
   --color-lgt-purple: rgb(89, 114, 183);
-  --color-bg-grey: rgba(34, 132, 197, 0.075);
+  --color-bg-blue: #F1FAFF;
+  --color-bg-grey: #EEF1F8;
   --padding-horiz: 17%;
+  --cs-padding-horiz: 8.4%;
 }
 
 body {
