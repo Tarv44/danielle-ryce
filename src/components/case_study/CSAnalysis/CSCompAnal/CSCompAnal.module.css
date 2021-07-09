@@ -1,0 +1,28 @@
+.compAnal {
+  padding: 0 8.4%;
+  width: 50%;
+}
+
+.compAnal h4 {
+  text-transform: lowercase;
+  font-size: 32px;
+  margin-top: 0;
+}
+
+.compAnal h4::after {
+  content: ".";
+}
+
+.compAnal p {
+  font-size: 24px;
+  text-align: left;
+}
+
+.compAnal p:last-of-type {
+  margin-bottom: 63px;
+}
+
+
+.compAnal img {
+  max-width: 100%;
+}

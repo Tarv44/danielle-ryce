@@ -1,0 +1,53 @@
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.dropdown h3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  font-size: 28px;
+}
+
+.dropdown h3 > svg {
+  transform: translateY(5px);
+}
+
+.content {
+  display: none;
+  width: 100%;
+}
+
+.openContent {
+  display: flex;
+}
+
+.content h4, .content li {
+  font-size: 24px;
+}
+
+.content div {
+  width: 50%;
+}
+
+.content h4 {
+  margin: 0 0 8px;
+  text-transform: lowercase;
+}
+
+.content ul {
+  margin: 0;
+}
+
+.content li {
+  margin-bottom: 8px;
+}
+
+.content h4::after {
+  content: ".";
+}

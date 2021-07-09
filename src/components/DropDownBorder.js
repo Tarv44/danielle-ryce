@@ -16,7 +16,7 @@ const DropDownBorder = ({top}) => {
   }, []);
   
   return (
-    <svg width={`${width}`} height="42" viewBox={`0 0 ${width} 42`} fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg width={`${width}`} height="46" viewBox={`0 0 ${width} 42`} fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d={`M${width-2} ${path}`} stroke="#2285C5" stroke-width="3"/>
     </svg>
   )
