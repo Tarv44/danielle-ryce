@@ -1,0 +1,100 @@
+.card {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 100%;
+  padding: 44px 25px 29px;
+}
+
+.card ul {
+  margin: 0;
+}
+
+.card h6 {
+  text-transform: lowercase;
+  font-size: 22px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.card h6::after {
+  content: "."
+}
+
+.card p, .card li {
+  font-size: 20px;
+}
+
+.card > div {
+  width: 50%;
+}
+
+.card > div:nth-child(-n + 2) {
+  margin-bottom: 25px;
+}
+
+.details {
+  display: flex;
+  margin-right: 27px;
+}
+
+.details img {
+  width: 140px;
+  height: 140px;
+  border-radius: 100%;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+.details h5 {
+  font-size: 24px;
+  text-transform: uppercase;
+  margin: 0;
+  color: var(--color-drk-purple);
+  transform: translateX(-24px);
+  z-index: 2;
+  width: 200px;
+}
+
+.details ul{
+  margin-top: 15px;
+}
+
+.details li {
+  text-align: left;
+}
+
+.chars_str p {
+  margin: 0;
+}
+
+.goals ul,
+.needs ul,
+.pains ul {
+  list-style: inside;
+}
+
+.needs ul,
+.pains ul {
+  text-align: left;
+}
+
+.goals {
+  background: var(--color-bg-grey);
+  border-radius: 100%;
+  padding-top: 13px;
+}
+
+.needs,
+.pains {
+  background: var(--color-bg-blue);
+  max-width: 49%;
+}
+
+.needs {
+  padding: 13px 28.5px 15px;
+}
+
+.pains {
+  padding: 15px;
+}

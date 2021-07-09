@@ -1,7 +1,7 @@
 import React from 'react';
 import Process from '../../../components/CSProcess/CSProcess';
 import Analysis from '../../../components/CSAnalysis/CSAnalysis';
-import getData from './sect2_data';
+import getData from '../data/sect2_data';
 
 const Sect2 = () => {
   const data = getData();

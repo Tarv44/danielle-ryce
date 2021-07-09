@@ -1,6 +1,6 @@
 import React , {useState, useEffect} from 'react';
 import DefineCarousel from '../../../components/CSDefineCarousel/CSDefineCarousel';
-import getData from './sect3_data';
+import getData from '../data/sect3_data';
 
 const Sect3 = () => {
   const data = getData()
@@ -19,7 +19,7 @@ const Sect3 = () => {
 
   return (
     <section>
-      <DefineCarousel data={carousel} />
+      <DefineCarousel title={data.title} desc={data.desc} carousel_data={carousel} />
     </section>
   )
 }

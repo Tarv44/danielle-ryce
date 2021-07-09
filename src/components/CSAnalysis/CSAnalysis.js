@@ -36,9 +36,9 @@ const Analysis = (props) => {
       </section>
       <section className={styles.closing}>
         {closing}
-        <div className={styles.report}>
+        {report && <div className={styles.report}>
           {report}
-        </div>
+        </div>}
       </section>
     </section>
   )
