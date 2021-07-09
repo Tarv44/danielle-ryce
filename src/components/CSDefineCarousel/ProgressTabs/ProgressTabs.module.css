@@ -1,20 +1,24 @@
 .progressBar {
   background: var(--color-bg-blue);
   padding: 35px 0 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .headings {
-  display: flex;
-  justify-content: center;
   margin-bottom: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 8.4%;
 }
 
 .headings button {
   display: inline-block;
-  min-width: 210px;
   line-height: 45px;
+  min-width: 190px;
   margin: 0;
-  margin-right: 37px;
   font-size: 28px;
   font-weight: normal;
   color: #BABABA;

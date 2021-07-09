@@ -12,6 +12,7 @@ const ProgressTabs = ({titles, index, setIndex}) => {
       style={index === i ? selected : null} 
       key={i}
       onClick={() => setIndex(i)}
+      className={i === 0 ? styles.notFive : null}
     >
       {t}
     </button>

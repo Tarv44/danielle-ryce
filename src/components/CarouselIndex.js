@@ -9,7 +9,6 @@ const CarouselIndex = (props) => {
   for (let i = 0; i < length; i++) {
     circles.push(<FaCircle key={i} style={{opacity: index === i && 1}} className={styles.circle}/>)
   }
-  console.log(circles)
   return (
     <div className={styles.index}>
       <AiFillCaretLeft onClick={handleLeft} className={styles.arrowLeft} />

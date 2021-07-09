@@ -1,14 +1,33 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 
 const ProgressBar = ({index}) => {
+  const breakPoint = 1200
+  const [five, setFive] = useState(window.innerWidth > breakPoint)
+  const [width, setWidth] = useState(window.innerWidth * .7)
+  const [circ2, setCirc2] = useState(five ? width *.25 : width*.33)
+  const [circ3, setCirc3] = useState(width*.5)
+  const [circ4, setCirc4] = useState(five ? width *.75 : width*.66)
+  
+
+  useEffect(() => {
+    const handleResize = () => {
+      const newWidth = window.innerWidth*.7
+      setFive(window.innerWidth > breakPoint ? true : false)
+      setWidth(newWidth)
+    }
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   return (
-    <svg width="1005" height="15" viewBox="0 0 1005 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M7 8H997" stroke="#BABABA"/>
-      <path d="M14.6364 7.5C14.6364 11.3617 11.4761 14.5 7.56818 14.5C3.66026 14.5 0.5 11.3617 0.5 7.5C0.5 3.63826 3.66026 0.5 7.56818 0.5C11.4761 0.5 14.6364 3.63826 14.6364 7.5Z" fill={index === 0 ? "#585799" : "white"} stroke="#585799"/>
-      <path d="M261.636 7.5C261.636 11.3617 258.476 14.5 254.568 14.5C250.66 14.5 247.5 11.3617 247.5 7.5C247.5 3.63826 250.66 0.5 254.568 0.5C258.476 0.5 261.636 3.63826 261.636 7.5Z" fill={index === 1 ? "#585799" : "white"} stroke="#585799"/>
-      <path d="M508.636 7.5C508.636 11.3617 505.476 14.5 501.568 14.5C497.66 14.5 494.5 11.3617 494.5 7.5C494.5 3.63826 497.66 0.5 501.568 0.5C505.476 0.5 508.636 3.63826 508.636 7.5Z" fill={index === 2 ? "#585799" : "white"} stroke="#585799"/>
-      <path d="M756.645 7.5C756.645 11.332 753.29 14.5 749.073 14.5C744.855 14.5 741.5 11.332 741.5 7.5C741.5 3.66802 744.855 0.5 749.073 0.5C753.29 0.5 756.645 3.66802 756.645 7.5Z" fill={index === 3 ? "#585799" : "white"} stroke="#585799"/>
-      <path d="M1003.65 7.5C1003.65 11.332 1000.29 14.5 996.073 14.5C991.855 14.5 988.5 11.332 988.5 7.5C988.5 3.66802 991.855 0.5 996.073 0.5C1000.29 0.5 1003.65 3.66802 1003.65 7.5Z" fill={index === 4 ? "#585799" : "white"} stroke="#585799"/>
+    <svg width={width} height="15" viewBox={`0 0 ${width} 15`} fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d={`M7 8H${width-8}`} stroke="#BABABA"/>
+      <circle cx="9" cy="7.5" r="7" fill={index === 0 ? "#585799" : "white"} stroke="#585799"/>
+      <circle cx={five ? width*.25 : width*.33} cy="7.5" r="7" fill={index === 1 ? "#585799" : "white"} stroke="#585799"/>
+      {five && <circle cx={width/2} cy="7.5" r="7" fill={index === 2 ? "#585799" : "white"} stroke="#585799"/>}
+      <circle cx={five ? width*.75 : width*.66} cy="7.5" r="7" fill={index === 3 ? "#585799" : "white"} stroke="#585799"/>
+      <circle cx={width-9} cy="7.5" r="7" fill={index === 4 ? "#585799" : "white"} stroke="#585799"/>
     </svg>
 
   )
