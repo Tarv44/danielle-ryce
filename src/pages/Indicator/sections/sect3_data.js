@@ -18,7 +18,7 @@ const data = () => {
           <>
             <p>Let’s backtrack a little bit. When I first embarked on the creation of this app, I envisioned an app that would do... well, everything.</p>
             <p>Some sort of magical concoction where the user could keep tabs on all areas of business.</p>
-            <p>I was a tad ambitious. I was also calling it Biznest due to the fact that it “would help artists soar”.... blech.</p>
+            <p>I was a tad ambitious. I was also calling it Biznest due to the fact that it <i>“would help artists soar”</i>.... blech.</p>
           </>
         ),
         component: (

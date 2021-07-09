@@ -6,6 +6,10 @@
   align-items: center;
 }
 
+.progressBar circle:hover {
+  cursor: pointer;
+}
+
 .headings {
   margin-bottom: 10px;
   width: 100%;

@@ -22,7 +22,7 @@ const ProgressTabs = ({titles, index, setIndex}) => {
       <div className={styles.headings}>
         {headings}
       </div>
-      <ProgressBar index={index} />
+      <ProgressBar index={index} setIndex={setIndex} />
     </div>
   )
 }
