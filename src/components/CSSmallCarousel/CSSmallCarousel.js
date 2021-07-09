@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
-import styles from './CSQuoteCarousel.module.css';
-import CarouselIndex from '../../../CarouselIndex';
+import styles from './CSSmallCarousel.module.css';
+import CarouselIndex from '../CarouselIndex';
 
-const QuoteCarousel = ({quotes}) => {
-  const length = quotes.length
+const QuoteCarousel = ({cards}) => {
+  const length = cards.length
   const [index, setIndex] = useState(0);
 
   const handleLeft = () => {
@@ -16,15 +16,7 @@ const QuoteCarousel = ({quotes}) => {
 
   return (
     <div className={styles.carousel}>
-      <div className={styles.card}>
-        <h5>They said things like:</h5>
-        <hr />
-        <div className={styles.content}>
-          <img src={quotes[index].img} alt="Interviewee" />
-          <p>{quotes[index].quote}</p>
-        </div>
-        <hr />
-      </div>
+      {cards[index]}
       <CarouselIndex 
         length={5}
         index={index}

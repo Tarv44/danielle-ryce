@@ -1,0 +1,31 @@
+.progressBar {
+  background: var(--color-bg-blue);
+  padding: 35px 0 45px;
+}
+
+.headings {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.headings button {
+  display: inline-block;
+  min-width: 210px;
+  line-height: 45px;
+  margin: 0;
+  margin-right: 37px;
+  font-size: 28px;
+  font-weight: normal;
+  color: #BABABA;
+  padding: 0;
+}
+
+.headings button:hover {
+  text-decoration: underline solid;
+  cursor: pointer;
+}
+
+.headings button:last-of-type {
+  margin-right: 0;
+}
