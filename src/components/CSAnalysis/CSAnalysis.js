@@ -1,9 +1,9 @@
 import React from 'react';
 import styles from './CSAnalysis.module.css';
 
-import CompAnal from './CSCompAnal/CSCompAnal';
-import Interviews from './CSInterviews/CSInterviews';
-import Dropdown from './CSDropdown/CSDropdown';
+import CompAnal from '../CSCompAnal/CSCompAnal';
+import Interviews from '../CSInterviews/CSInterviews';
+import Dropdown from '../CSDropdown/CSDropdown';
 
 const Analysis = (props) => {
   const {

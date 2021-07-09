@@ -1,7 +1,7 @@
 import React from 'react';
 import IndicatorDevices from '../../../images/indicator-devices.svg';
-import Header from '../../../components/case_study/CSHeader/CSHeader';
-import Intro from '../../../components/case_study/CSIntro/CSIntro';
+import Header from '../../../components/CSHeader/CSHeader';
+import Intro from '../../../components/CSIntro/CSIntro';
 import Devices from '../../../images/indicator-devices2.svg';
 
 const Sect1 = () => {

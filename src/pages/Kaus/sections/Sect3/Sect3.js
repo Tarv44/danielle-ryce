@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './Sect3.module.css';
-import DropDownBorder from '../../DropDownBorder';
 
 const Sect3 = () => {
   return (
@@ -28,8 +27,6 @@ const Sect3 = () => {
           {/* --- Quote carousel goes here --- */}
         </div>
         <div>
-          <DropDownBorder top={true} />
-          <DropDownBorder top={false} />
         </div>
       </main>
     </section>

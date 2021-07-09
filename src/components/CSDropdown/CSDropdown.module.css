@@ -18,6 +18,10 @@
   transform: translateY(5px);
 }
 
+.dropdown h3 > svg:hover {
+  cursor: pointer;
+}
+
 .content {
   display: none;
   width: 100%;

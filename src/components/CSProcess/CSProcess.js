@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './CSProcess.module.css';
-import Wheel from '../../../images/process.svg';
+import Wheel from '../../images/process.svg';
 
 const Process = ({title, desc}) => {
   return (

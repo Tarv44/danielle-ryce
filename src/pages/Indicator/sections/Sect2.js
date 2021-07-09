@@ -1,6 +1,6 @@
 import React from 'react';
-import Process from '../../../components/case_study/CSProcess/CSProcess';
-import Analysis from '../../../components/case_study/CSAnalysis/CSAnalysis';
+import Process from '../../../components/CSProcess/CSProcess';
+import Analysis from '../../../components/CSAnalysis/CSAnalysis';
 import getData from './sect2_data';
 
 const Sect2 = () => {

@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import styles from './CSDropdown.module.css';
 
-import DropDownBorder from '../../../DropDownBorder';
+import DropDownBorder from '../DropDownBorder';
 import {
   AiFillCaretDown as DownCaret,
   AiFillCaretUp as UpCaret,
