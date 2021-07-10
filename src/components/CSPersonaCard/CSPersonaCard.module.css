@@ -3,7 +3,7 @@
   flex-flow: row wrap;
   justify-content: space-between;
   width: 100%;
-  padding: 44px 25px 29px;
+  padding: 44px 25px 0;
 }
 
 .card ul {

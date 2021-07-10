@@ -2,6 +2,8 @@ import React from 'react';
 import Component1 from '../components/Sect3_Component1/Sect3_Component1';
 import Component2 from '../components/Sect3_Component2/Sect3_Component2';
 import Component3 from '../components/Sect3_Component3/Sect3_Component3';
+import Component4 from '../components/Sect3_Component4/Sect3_Component4';
+import Component5 from '../components/Sect3_Component5/Sect3_Component5';
 
 const data = () => {
   const bold = {fontWeight: 500}
@@ -60,9 +62,7 @@ const data = () => {
           </>
         ),
         component: (
-          <div>
-            <h4>Component</h4>
-          </div>
+          <Component4 />
         ),
       },
       {
@@ -76,9 +76,7 @@ const data = () => {
           </>
         ),
         component: (
-          <div>
-            <h4>Component</h4>
-          </div>
+          <Component5 />
         ),
       },
     ]

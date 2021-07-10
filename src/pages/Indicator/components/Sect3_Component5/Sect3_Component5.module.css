@@ -1,0 +1,46 @@
+.comp5 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 17px 13px 0;
+}
+
+.comp5 > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100%;
+  max-width: 26.1%;
+}
+.comp5 > div > div {
+  padding: 10px;
+
+}
+
+.comp5 > * {
+  margin-right: 13px;
+}
+
+.comp5 > *:last-child {
+  margin-right: 0;
+}
+
+.comp5 p {
+  font-size: 18px;
+  text-align: left;
+  margin: 0;
+}
+
+.left {
+  
+}
+
+.left > div { 
+  background: var(--color-bg-blue);
+  margin-bottom: 10px;
+}
+
+.right > div { 
+  background: var(--color-bg-grey);
+  margin-bottom: 23px;
+}
