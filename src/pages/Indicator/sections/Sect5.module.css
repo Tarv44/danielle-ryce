@@ -1,0 +1,59 @@
+.sect5 {
+  margin-bottom: 150px;
+}
+
+.styleGuide {
+  display: flex;
+  flex-direction: column;
+  padding: 0 182px;
+  width: 100%;
+}
+
+.logo,
+.heading,
+.right,
+.bottom > div {
+  background: #F5F5F5;
+}
+
+.top,
+.head_typ,
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top {
+  margin-bottom: 51px;
+}
+
+.sect5 p {
+  font-size: 28px;
+}
+
+.heading {
+  display: inline-block;
+  padding: 15px 115px;
+  margin-right: 102px;
+}
+
+.logo {
+  align-self: flex-start;
+  padding: 0 52.5px;
+  margin-bottom: 47px;
+}
+
+.right {
+  padding: 25px 29px 19px;
+  align-self: flex-end;
+}
+
+.pallette, .pattern{
+  width: 500px;
+  height: 500px;
+}
+
+.pallette {
+  padding: 25px 20px 9px 17px;
+}

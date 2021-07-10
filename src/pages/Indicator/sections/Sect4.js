@@ -1,12 +1,13 @@
 import React from 'react';
 import styles from './Sect4.module.css';
+import gblStyles from '../../../global.module.css';
 import WF_full from '../../../images/indicator-sect4-full.svg';
 import FullReport from '../../../components/FullReport';
 
 const Sect4 = () => {
   return (
     <section className={styles.sect4}>
-      <div className={styles.intro}>
+      <div className={`${gblStyles.csIntro} ${styles.intro}`}>
         <h3>3. K.I.S.S.</h3>
         <p>Okay, so I thought I had a solution, but what did other musicians think? <span className={styles.boldish}>I put Indicator to the test!</span></p>
         <p>I selected 5 more musicians out of my personal circles to test whether Indicator <b>a)</b> would alleviate some uncertainty and overwhelm by helping musicians feel like they were taking control of their career and <b>b)</b> was easy to use and understand.</p> 

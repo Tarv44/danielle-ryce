@@ -8,3 +8,21 @@
   padding: 0 92px;
   text-transform: uppercase;
 }
+
+.hPad {
+  padding-left: var(--cs-padding-horiz);
+  padding-right: var(--cs-padding-horiz);
+}
+
+.csIntro {
+  text-align: left;
+}
+
+.csIntro h3 {
+  font-size: 45px;
+  margin: 0 0 30px;
+}
+
+.csIntro p {
+  font-size: 28px;
+}

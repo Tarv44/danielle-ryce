@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import styles from './CSDefineCarousel.module.css';
+import gblStyles from '../../global.module.css';
 import ProgressTabs from './ProgressTabs/ProgressTabs';
 import CarouselScreen from './CarouselScreen/CarouselScreen';
 
@@ -18,7 +19,7 @@ const DefineCarousel = ({title, desc, carousel_data}) => {
   }
   return (
     <section>
-      <div className={styles.intro}>
+      <div className={`${gblStyles.csIntro} ${gblStyles.hPad}`}>
         <h3>2. {title}</h3>
         {desc}
       </div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './CSProcess.module.css';
+import gblStyles from '../../global.module.css';
 import Wheel from '../../images/process.svg';
 
 const Process = ({title, desc}) => {
@@ -9,7 +10,7 @@ const Process = ({title, desc}) => {
         <img src={Wheel} alt='' />
         <h4>The Process</h4>
       </div>
-      <div className={styles.content}>
+      <div className={gblStyles.csIntro}>
         <h3>1. {title}</h3>
         {desc}
       </div>

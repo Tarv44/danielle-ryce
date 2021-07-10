@@ -1,18 +1,9 @@
 .sect4 {
-  padding: 0 var(--cs-padding-horiz);
+  padding: 0 var(--cs-padding-horiz) 150px;
 } 
 
 .intro {
-  text-align: left;
   margin-bottom: 50px;
-}
-
-.intro h3 {
-  font-size: 45px;
-}
-
-.intro p {
-  font-size: 28px;
 }
 
 .boldish {
