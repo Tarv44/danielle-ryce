@@ -28,7 +28,7 @@ const Sect4 = () => {
           <p className={styles.p5}>Option to make their own “pack” via this card</p>
         </div>
       </div>
-      <FullReport url='' />
+      <FullReport url='https://miro.com/app/board/o9J_l9ou9MQ=/' />
     </section>
   )
 }

@@ -86,7 +86,7 @@ const sect2_data = () => {
       'No 1-1 coaching (4/5)'
     ],
     closing: closing(),
-    report: <p>View the full report in detail <u><a href=''>here</a></u>.</p>,
+    report: <p>View the full report in detail <u><a target="_blank" rel="noreferrer" href='https://www.figma.com/exit?url=https%3A%2F%2Fwww.figma.com%2Fproto%2FtLYA8cmmw9yxZezB0yLSRo%2FBiznest-Research-Findings%3Fnode-id%3D15%253A5%26scaling%3Dmin-zoom'>here</a></u>.</p>,
   }
 }
 

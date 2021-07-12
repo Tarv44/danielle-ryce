@@ -18,9 +18,11 @@ const Sect6 = () => {
         <p>Draw back the curtains, it’s showtime! View the final result here:</p>
       </div>
       <div style={signupStyle}>
-        <img style={{width: 270}} src={Signup} alt="Indicator signup screen" />
+        <a target="_blank" rel="noreferrer" href='https://www.figma.com/proto/EZu4q3fOwTNKDVQ2qcl3lp/Indicator-Prototype?page-id=163%3A900&node-id=163%3A901&viewport=145%2C66%2C0.06343192607164383&scaling=scale-down'>
+          <img style={{width: 270}} src={Signup} alt="Indicator signup screen" />
+        </a>
       </div>
-      <PrototypeLink url="" />
+      <PrototypeLink url="https://www.figma.com/proto/EZu4q3fOwTNKDVQ2qcl3lp/Indicator-Prototype?page-id=163%3A900&node-id=163%3A901&viewport=145%2C66%2C0.06343192607164383&scaling=scale-down" />
     </section>
   )
 }

@@ -16,7 +16,7 @@ const FullReport = ({url}) => {
   }
   return (
     <div style={divStyle}>
-      <p style={pStyle}>What else did I uncover? For a full report, go <a href={url}><u>here</u></a>.</p>
+      <p style={pStyle}>What else did I uncover? For a full report, go <a target="_blank" rel="noreferrer" href={url}><u>here</u></a>.</p>
     </div>
   )
 }

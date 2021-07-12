@@ -28,7 +28,7 @@ const Sect3 = () => {
     <section>
       <DefineCarousel title={data.title} desc={data.desc} carousel_data={carousel} />
       <div style={wireframeStyle}>
-        <WireframeLink url='' />
+        <WireframeLink url='https://www.figma.com/exit?url=https%3A%2F%2Fwww.figma.com%2Ffile%2FULopdih9v1tzAtZTkc7V0v%2FIndicator-Wireframes%3Fnode-id%3D16%253A0' />
       </div>
     </section>
   )
