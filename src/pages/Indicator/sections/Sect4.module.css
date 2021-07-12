@@ -67,6 +67,7 @@
 .p3 {
   top: 566px;
   left: 370px;
+  max-width: 160px !important;
 }
 
 .p4 {
