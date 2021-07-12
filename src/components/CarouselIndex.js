@@ -4,10 +4,23 @@ import { FaCircle } from "react-icons/fa";
 import styles from './CarouselIndex.module.css';
 
 const CarouselIndex = (props) => {
-  const {length, index, handleLeft, handleRight} = props;
+  const {length, index, setIndex} = props;
   const circles = []
   for (let i = 0; i < length; i++) {
-    circles.push(<FaCircle key={i} style={{opacity: index === i && 1}} className={styles.circle}/>)
+    circles.push(
+      <button onClick={() => setIndex(i)}>
+        <FaCircle key={i} style={{opacity: index === i && 1}} className={styles.circle}/>
+      </button>
+    )
+  }
+
+  const handleLeft = () => {
+    if (index === 0) setIndex(length-1)
+    else setIndex(index-1)
+  }
+  const handleRight = () => {
+    if (index === length-1) setIndex(0)
+    else setIndex(index+1)
   }
   return (
     <div className={styles.index}>

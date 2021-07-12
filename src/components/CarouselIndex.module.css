@@ -7,6 +7,7 @@
 
 .arrowLeft, .arrowRight {
   min-height: 14px;
+  cursor: pointer;
 }
 
 .arrowLeft {
@@ -16,4 +17,3 @@
 .arrowRight {
   margin-left: 6.5px;
 }
-

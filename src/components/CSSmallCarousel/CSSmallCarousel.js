@@ -20,8 +20,7 @@ const QuoteCarousel = ({cards}) => {
       <CarouselIndex 
         length={5}
         index={index}
-        handleLeft={handleLeft}
-        handleRight={handleRight}
+        setIndex={setIndex}
       />
     </div>
   )

@@ -1,0 +1,19 @@
+.closing h2 {
+  text-transform: uppercase;
+  color: var(--color-blue);
+  font-size: 45px;
+}
+
+.content {
+  background: var(--color-bg-grey);
+  margin: 0 10% 0;
+  padding: 40px 85px;
+}
+
+.content p{
+  font-size: 28px;
+}
+
+.content p:last-of-type {
+  margin-bottom: 35px;
+}
