@@ -1,0 +1,37 @@
+.comp4 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  min-height: 518px;
+  padding: 28px 50px;
+}
+
+.comp4 img {
+  z-index: 1;
+}
+
+.comp4 div {
+  z-index: 2;
+  max-width: 206px;
+  text-align: left;
+  padding: 10px;
+}
+
+.comp4 p {
+  margin: 0;
+  font-size: 18px;
+}
+
+.left > div {
+  margin-bottom: 16px;
+  background: var(--color-bg-blue);
+}
+
+.left > div:last-of-type {
+  margin-bottom: 0;
+}
+
+.right {
+  background: var(--color-bg-blue);
+}

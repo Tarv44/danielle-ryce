@@ -1,0 +1,19 @@
+.circle {
+  width: 8px;
+  margin: 0 8px;
+  color: #2E3F6B;
+  opacity: .4;
+}
+
+.arrowLeft, .arrowRight {
+  min-height: 14px;
+  cursor: pointer;
+}
+
+.arrowLeft {
+  margin-right: 6.5px;
+}
+
+.arrowRight {
+  margin-left: 6.5px;
+}

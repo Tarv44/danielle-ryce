@@ -1,0 +1,90 @@
+.screen {
+  background: var(--color-bg-grey);
+  padding: 50px 0 35px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 var(--cs-padding-horiz);
+}
+
+.content {
+  max-width: 360px;
+  margin-right: 50px;
+  text-align: left;
+  align-self: flex-start;
+}
+
+.content h4 {
+  text-transform: lowercase;
+  font-size: 32px;
+  margin: 0;
+}
+
+.content h4::after {
+  content: ".";
+}
+
+.content p {
+  font-size: 20px;
+}
+
+.component {
+  min-height: 518px;
+  width: 100%;
+  background: #ffffff;
+  border-radius: 10px;
+}
+
+/* ARROWS */
+
+.left, .right {
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background: var(--color-bg-blue);
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  position: absolute;
+}
+
+.left {
+  left: 20px
+}
+
+.right {
+  right: 20px;
+}
+
+.left img, .right img {
+  transform: translateY(4px);
+}
+
+.prevNext {
+  position: relative;
+  margin: 0 var(--cs-padding-horiz) 35px;
+}
+
+.prevNext svg {
+  font-size: 30px;
+  transform: translateY(10px);
+}
+
+.prevNext button {
+  position: absolute;
+  font-size: 20px;
+}
+
+.previous {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}

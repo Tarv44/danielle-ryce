@@ -1,0 +1,45 @@
+.comp2 {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 518px;
+}
+
+.comp2 img {
+  z-index: 1;
+}
+
+.comp2 div {
+  z-index: 2;
+  position: absolute;
+  max-width: 206px;
+  text-align: left;
+  padding: 10px;
+}
+
+.comp2 p {
+  margin: 0;
+  font-size: 18px;
+}
+
+.div1, .div3 {
+  background: var(--color-bg-blue);
+}
+
+.div1 {
+  top: 50px;
+  left: 26px;
+}
+
+.div2 {
+  background: var(--color-bg-grey);
+  top: 145px;
+  right: 20px;
+}
+
+.div3 {
+  left: 26px;
+  bottom: 61px;
+}

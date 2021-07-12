@@ -1,13 +1,13 @@
 import React from 'react';
 
 //sections
-import Sect1 from '../../components/page_kaus/Sect1/Sect1';
-import Sect2 from '../../components/page_kaus/Sect2/Sect2';
-import Sect3 from '../../components/page_kaus/Sect3/Sect3';
-import Sect4 from '../../components/page_kaus/Sect4/Sect4';
-import Sect5 from '../../components/page_kaus/Sect5/Sect5';
-import Sect6 from '../../components/page_kaus/Sect6/Sect6';
-import Sect7 from '../../components/page_kaus/Sect7/Sect7';
+import Sect1 from './sections/Sect1/Sect1';
+import Sect2 from './sections/Sect2/Sect2';
+import Sect3 from './sections/Sect3/Sect3';
+import Sect4 from './sections/Sect4/Sect4';
+import Sect5 from './sections/Sect5/Sect5';
+import Sect6 from './sections/Sect6/Sect6';
+import Sect7 from './sections/Sect7/Sect7';
 
 const Kaus = () => {
   return (

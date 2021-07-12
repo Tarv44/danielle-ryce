@@ -1,0 +1,46 @@
+.analysis {
+  background: linear-gradient(
+    90deg, 
+    var(--color-bg-grey) 50%, 
+    var(--color-bg-blue) 50%
+  );
+  padding: 54px 0 45px;
+}
+
+.sides {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 55px;
+}
+
+.closing {
+  text-align: left;
+  padding: 0 var(--cs-padding-horiz);
+  margin-bottom: 150px;
+}
+
+.closing p {
+  font-size: 28px;
+}
+
+.closing h4 {
+  font-size: 32px;
+  margin-bottom: 50px;
+}
+
+.closing h4, .closing u {
+  color: var(--color-green);
+}
+
+.report {
+  display: flex;
+  justify-content: center;
+}
+
+.report p {
+  font-size: 18px;
+  background: var(--color-bg-blue);
+  display: inline-block;
+  padding: 5px 20px;
+  margin: 0;
+}
