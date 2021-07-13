@@ -11,7 +11,7 @@ const Component5 = () => {
         <div><p>The app autopopulates suggested actions to take to keep the number going up, or stop it from falling down</p></div>
         <div><p>The user has the option to connect with a “Manager” as a consultant for further insight as well as accountability</p></div>
       </div>
-      <img src={Image}/>
+      <img src={Image} alt="Early sketch of Indicator app"/>
       <div className={styles.right}>
         <div><p>Voila! The name is born!</p></div>
         <div><p>Trifecta achieved: Accountability, guidance, and ability to track progress!</p></div>

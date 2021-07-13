@@ -16,7 +16,7 @@ const Component4 = () => {
           <p>Coach can check in to make sure the user is staying up to date on their list </p>
         </div>
       </div>
-      <img src={Image} />
+      <img src={Image} alt="Early sketch of Indicator"/>
       <div className={styles.right}>
         <p>Can send the coach questions at any point via chat feature </p>
       </div>

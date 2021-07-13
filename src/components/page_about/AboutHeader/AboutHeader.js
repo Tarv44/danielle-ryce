@@ -15,7 +15,8 @@ const AboutHeader = () => {
           <img className={styles.img} src={Danielle} alt="Danielle Ryce" />
         </div>
       </main>
-      <p><i>(Pst, Danielle? I’d like to skip all this. Just give me the <u><a>resume</a></u>.)</i></p>
+      {/* <p><i>(Pst, Danielle? I’d like to skip all this. Just give me the <u><a>resume</a></u>.)</i></p> */}
+      <p><i>(Pst, Danielle? I’d like to skip all this. Just give me the <u>resume</u>.)</i></p>
     </header>
 
   )

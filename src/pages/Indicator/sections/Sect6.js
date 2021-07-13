@@ -1,4 +1,3 @@
-import { styles } from 'ansi-colors';
 import React from 'react';
 import gblStyles from '../../../global.module.css';
 import Signup from '../../../images/indicator-signup.svg';

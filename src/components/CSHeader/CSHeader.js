@@ -15,7 +15,8 @@ const Header = (props) => {
         />
       </div>
       <p>View prototype <u><a
-        target="_blank" 
+        target="_blank"
+        rel="noreferrer" 
         href={props.link}
         >here</a></u>.
       </p>

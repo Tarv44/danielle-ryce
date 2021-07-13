@@ -22,7 +22,7 @@ const Sect3 = () => {
 
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
-  }, []);
+  }, [data.carousel]);
 
   return (
     <section>

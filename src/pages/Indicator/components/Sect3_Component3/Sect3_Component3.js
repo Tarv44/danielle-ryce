@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Sect3_Component3.module.css'
+// import styles from './Sect3_Component3.module.css'
 import PersonaCard from '../../../../components/CSPersonaCard/CSPersonaCard';
 import Profile from '../../../../images/indicator_carousel3.png';
 

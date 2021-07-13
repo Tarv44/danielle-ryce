@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import styles from './CSDefineCarousel.module.css';
+// import styles from './CSDefineCarousel.module.css';
 import gblStyles from '../../global.module.css';
 import ProgressTabs from './ProgressTabs/ProgressTabs';
 import CarouselScreen from './CarouselScreen/CarouselScreen';

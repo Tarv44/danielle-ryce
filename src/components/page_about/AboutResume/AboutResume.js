@@ -7,7 +7,8 @@ const AboutResume = () => {
   return (
     <section className={styles.resume}>
       <img src={ARCH} alt="Colorful arch with text that states 'You'd rather see a normal resume, wouldn't you'"/>
-      <a className={gblStyles.button}>See My Resume</a>
+      {/* <a className={gblStyles.button}>See My Resume</a> */}
+      <p className={gblStyles.button}>See My Resume</p>
     </section>
   )
 }

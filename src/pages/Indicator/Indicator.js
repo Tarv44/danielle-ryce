@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Indicator.module.css';
+// import styles from './Indicator.module.css';
 
 import Sect1 from './sections/Sect1';
 import Sect2 from './sections/Sect2';

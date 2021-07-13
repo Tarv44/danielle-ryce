@@ -6,19 +6,11 @@ const QuoteCarousel = ({cards}) => {
   const length = cards.length
   const [index, setIndex] = useState(0);
 
-  const handleLeft = () => {
-    setIndex(index === 0 ? length-1 : index-1)
-  }
-
-  const handleRight = () => {
-    setIndex(index === length-1 ? 0 : index+1)
-  }
-
   return (
     <div className={styles.carousel}>
       {cards[index]}
       <CarouselIndex 
-        length={5}
+        length={length}
         index={index}
         setIndex={setIndex}
       />
