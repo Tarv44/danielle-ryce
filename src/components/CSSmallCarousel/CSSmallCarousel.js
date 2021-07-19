@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import styles from './CSSmallCarousel.module.css';
 import CarouselIndex from '../CarouselIndex';
 
-const QuoteCarousel = ({cards}) => {
+const SmallCarousel = ({cards}) => {
   const length = cards.length
   const [index, setIndex] = useState(0);
 
@@ -18,4 +18,4 @@ const QuoteCarousel = ({cards}) => {
   )
 }
 
-export default QuoteCarousel;
+export default SmallCarousel;

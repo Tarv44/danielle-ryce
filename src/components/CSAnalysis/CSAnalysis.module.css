@@ -7,6 +7,10 @@
   padding: 54px 0 45px;
 }
 
+.analysis {
+  margin-bottom: 50px;
+}
+
 .sides {
   display: flex;
   justify-content: center;
@@ -21,6 +25,10 @@
 
 .closing p {
   font-size: 28px;
+}
+
+.closing p:first-of-type {
+  margin-top: 0;
 }
 
 .closing h4 {

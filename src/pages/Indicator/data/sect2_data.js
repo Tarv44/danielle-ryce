@@ -26,12 +26,12 @@ const sect2_data = () => {
   return {
     desc: (
       <>
-          <p>First up, research. I wanted to find out if other independent musicians were struggling like myself. <b
-            >What</b> was holding them back from success in their opinion? <b
-            >How</b> are they currently managing business? <b
-            >Where</b> would they seek help, and <b>why</b>? Did this help exist already?
-          </p> 
-          <p>What was my method of discovery, and what did I uncover?</p>    
+        <p>First up, research. I wanted to find out if other independent musicians were struggling like myself. <b
+          >What</b> was holding them back from success in their opinion? <b
+          >How</b> are they currently managing business? <b
+          >Where</b> would they seek help, and <b>why</b>? Did this help exist already?
+        </p> 
+        <p>What was my method of discovery, and what did I uncover?</p>    
       </>
     ),
     ca_content: (

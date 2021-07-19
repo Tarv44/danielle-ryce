@@ -46,10 +46,13 @@
 
 .content ul {
   margin: 0;
+  max-width: 321px;
+  margin: auto;
 }
 
 .content li {
   margin-bottom: 8px;
+  
 }
 
 .content h4::after {

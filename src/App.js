@@ -2,6 +2,7 @@ import React from 'react';
 import {Route} from 'react-router-dom';
 import Header from './components/NavBar/NavBar';
 import Footer from './components/Footer/Footer';
+import 'react-image-lightbox/style.css';
 import './App.css';
 
 //pages

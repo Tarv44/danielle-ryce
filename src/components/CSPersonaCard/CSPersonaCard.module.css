@@ -3,7 +3,8 @@
   flex-flow: row wrap;
   justify-content: space-between;
   width: 100%;
-  padding: 44px 25px 0;
+  padding: 44px 25px 22px;
+  background: #ffffff;
 }
 
 .card ul {
@@ -53,11 +54,13 @@
   color: var(--color-drk-purple);
   transform: translateX(-24px);
   z-index: 2;
-  width: 200px;
+  /* min-width: 100%; */
+  position: absolute;
 }
 
 .details ul{
-  margin-top: 15px;
+  margin-top: 50px;
+  position: absolute;
 }
 
 .details li {
@@ -66,6 +69,7 @@
 
 .chars_str p {
   margin: 0;
+  margin-top: 25px;
 }
 
 .goals ul,
