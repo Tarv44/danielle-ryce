@@ -7,8 +7,8 @@ const QuoteCard = ({img, quote}) => {
       <h5>They said things like:</h5>
       <hr />
       <div className={styles.content}>
-        <img src={img} alt="Interviewee" />
-        <p>{quote}</p>
+        {img && <img src={img} alt="Interviewee" />}
+        <p style={{fontSize: !img && 24 }}>{quote}</p>
       </div>
       <hr />
     </div>

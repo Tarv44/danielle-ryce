@@ -21,13 +21,13 @@ const Dropdown = (props) => {
       <div className={`${styles.content} ${open && styles.openContent}`}>
         <div>
           <h4>What's Annoying</h4>
-          <ul>
+          <ul style={{maxWidth: props.ulWidth}}>
             {annoying}
           </ul>
         </div>
         <div>
           <h4>What they need</h4>
-          <ul>
+          <ul style={{maxWidth: props.ulWidth}}>
             {needs}
           </ul>
         </div>

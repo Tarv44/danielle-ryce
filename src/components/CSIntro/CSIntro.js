@@ -5,7 +5,7 @@ const Intro = (props) => {
   return (
     <section className={styles.intro}>
       <div className={styles.header}>
-        <h2>{props.title}</h2>
+        <h2 style={{maxWidth: props.titleWidth}}>{props.title}</h2>
         <h4>Role: {props.role}</h4>
       </div>
       <div className={styles.content}>

@@ -14,7 +14,8 @@ const Analysis = (props) => {
     ca_content, 
     ca_img,
     annoying,
-    needs
+    needs,
+    ulWidth
   } = props
   return (
     <section >
@@ -29,7 +30,8 @@ const Analysis = (props) => {
             quotes={intvw_quotes}
           />
         </div>
-        <Dropdown 
+        <Dropdown
+          ulWidth={ulWidth} 
           annoying={annoying}
           needs={needs}
         />

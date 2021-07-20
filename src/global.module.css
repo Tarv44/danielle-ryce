@@ -21,6 +21,7 @@
 .csIntro h3 {
   font-size: 45px;
   margin: 0 0 30px;
+  text-transform: uppercase;
 }
 
 .csIntro p {

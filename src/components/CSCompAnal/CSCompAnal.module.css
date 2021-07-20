@@ -1,6 +1,9 @@
 .compAnal {
-  padding: 0 8.4%;
+  padding: 0 8.4% 20px;
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .compAnal h4 {
