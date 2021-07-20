@@ -1,3 +1,7 @@
+.closing {
+  padding: 0 16.8%;
+}
+
 .closing h2 {
   text-transform: uppercase;
   color: var(--color-blue);
@@ -10,7 +14,7 @@
   justify-content: space-between;
   align-items: center;
   background: var(--color-bg-grey);
-  margin: 0 10% 0;
+  /* margin: 0 10% 0; */
   padding: 40px 85px;
   min-height: 650px;
 }

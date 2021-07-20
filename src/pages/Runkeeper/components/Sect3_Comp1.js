@@ -1,105 +1,65 @@
 import React from 'react';
-import SmallCarousel from '../../../components/CSSmallCarousel/CSSmallCarousel';
 import PersonaCard from '../../../components/CSPersonaCard/CSPersonaCard';
-import Profile1 from '../../../images/kaus-persona-1.jpg';
-import Profile2 from '../../../images/kaus-persona-2.jpg';
+import Profile from '../../../images/runkeeper-persona.jpg';
+import styles from './Sect3_Comp1.module.css';
 
 const Component1 = () => {
-  const data1 ={
-    name: 'Lindsey Davis',
-    details: [
-      'Female, 31 yo',
-      'Bellevue, Washington',
-      'HR Manager',
-      '$80,000 salary',
-    ],
-    chars: [
-      'Responsible',
-      'Busy',
-      'Social',
-      'Proactive'
-    ],
-    goals: [
-      'Be prepared',
-      'Be rewarded for her patronage',
-      'Kinder process for filing claims',
-      'Be proactive'
-    ],
-    needs: [
-      'Quick breakdown of information',
-      'Levels of coverage available',
-      'Connection to a person/agent',
-      'Good customer reviews',
-      'Proof it’s a reliable company',
-      'More benefits'
-    ],
-    pains: [
-      'Doesn’t understand her rising rates',
-      'No time to research new',
-      'No preventative coverage for maintenance',
-      'Wary of filing a claim because of her car accident experience'
-    ]
-  }
-  const data2 ={
-    name: 'Matt Anderson',
-    details: [
-      'Male, 24 yo',
-      'New Orleans, Louisiana',
-      'Barista & Student',
-      '$25,000 salary'
-    ],
-    chars: [
-      'Relaxed',
-      'Worker',
-      'Intellectual',
-      'Effecient',
-    ],
-    goals: [
-      'Complete the chore',
-      'Signup, pay, be done with it',
-      'Add a sense of security and peace for him & his girlfriend',
-    ],
-    needs: [
-      'Easy signup process',
-      'Transparent breakdown of what the company can do for him',
-      'Objective display of reviews',
-      'Less ads',
-      'Needs to feel customer-forward'
-    ],
-    pains: [
-      'Not sure what he needs',
-      'Wants affordable, but not cheap',
-      'All seem exactly the same',
-      'Doesn’t want to provide info',
-      'Not enough info up front',
-      'Ads are manipultative & pushy'
-    ]
-  }
-  const cards = [
-    <PersonaCard
-      name={data1.name}
-      profile={Profile1}
-      details={data1.details} 
-      chars={data1.chars} 
-      goals={data1.goals} 
-      needs={data1.needs} 
-      pains={data1.pains}
-    />,
-    <PersonaCard
-    name={data2.name}
-    profile={Profile2}
-    details={data2.details} 
-    chars={data2.chars} 
-    goals={data2.goals} 
-    needs={data2.needs} 
-    pains={data2.pains}
-    />
-  ]
+  const med ={fontWeight: 500}
   return (
-    <div>
-      <SmallCarousel cards={cards} />
-    </div>
+    <section className={styles.section}>
+      <div className={styles.content}>
+        <h4>Persona</h4>
+        <p>I created the persona, <span style={med}>Rachel McDonald</span>, to embody the characteristics of the two participants who were no longer working out, as I felt they needed the most help getting back into strength training.</p>
+        <p>Again, the resulting need was similar: <span style={med}>simple, yet effective workouts</span> that Rachel could easily include in her weekly routine.</p>
+      </div>
+      <div className={styles.persona}>
+        <PersonaCard
+          name="Rachel McDonald"
+          profile={Profile}
+          details={data.details}
+          chars={data.chars}
+          charSize={20}
+          goals={data.goals}
+          needs={data.needs}
+          pains={data.pains}
+        />
+      </div>
+    </section>
   )
+}
+
+const data = {
+  details: [
+    `Female, 30yo`,
+    `Cincinnati, OH`,
+    `Marketing`,
+    `Apple Watch, iPhone`
+  ],
+  chars: [
+    `Self Disciplined`,
+    `Goal Oriented`,
+    `Perfectionist`,
+  ],
+  goals: [
+    `Prevent injury`,
+    `Prepare for her first marathon`,
+    `See how she progresses over time`,
+    `Enhance her running`
+  ],
+  needs: [
+    `Workouts that compliment her marathon training`,
+    `Sustainable schedule`,
+    `Track her progress over time`,
+    `Convenience`,
+    `Simplicity`
+  ],
+  pains: [
+    `No time to research workouts`,
+    `Unfamiliar with strength training`,
+    `Hates to go to the gym`,
+    `Worried about burnout`,
+    `Losing muscle due to too much cardio`
+  ]
 }
 
 export default Component1;
