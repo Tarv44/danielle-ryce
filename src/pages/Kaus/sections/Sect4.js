@@ -6,10 +6,6 @@ import COLOR from '../../../images/kaus-wireframes-color.jpg';
 
 const Sect4 = () => {
   const weight = {fontWeight: 500}
-  const padding = {
-    paddingLeft: 'var(--cs-padding-horiz)',
-    paddingRight: 'var(--cs-padding-horiz)',
-  }
   const blue = {color: '#2E3F6B'}
   const boldBlue = {...weight, ...blue}
   const divStyles = {
@@ -26,8 +22,8 @@ const Sect4 = () => {
     background: '#ffffff'
   }
   return (
-    <section>
-      <div style={padding} className={gblStyles.csIntro}>
+    <section style={{marginBottom: 150}}>
+      <div className={`${gblStyles.csIntro} ${gblStyles.hPad}`}>
         <h3>3. Design</h3>
         <p>Next steps are to bring the product to life through branding. I identified a set of brand keywords: <span style={weight}>dependable, simple, and approachable</span>.</p>
         <p>I used these adjectives to guide my stylistic choices, including typography, color palette, photo treatment, etc, and to lead me as I created the <span style={boldBlue}>logo</span> and <span style={boldBlue}>icon set</span>. This included design practices such as setting up a <span style={boldBlue}>moodboard and style guide</span>.</p>

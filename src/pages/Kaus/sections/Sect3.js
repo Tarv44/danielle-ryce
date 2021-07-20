@@ -6,7 +6,7 @@ import getData from '../data/Sect3_data';
 const Sect3 = () => {
   const data = getData();
   return (
-    <section>
+    <section style={{marginBottom: 150}}>
       <DefineCarousel 
         title={data.title}
         desc={data.desc}

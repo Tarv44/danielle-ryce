@@ -27,6 +27,7 @@
   flex-direction: row;
   align-items: center;
   padding: 14.5px 0;
+  margin-bottom: 0 !important;
 }
 
 .content img {
