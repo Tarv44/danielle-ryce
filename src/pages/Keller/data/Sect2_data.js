@@ -1,17 +1,15 @@
 import React from 'react';
-import CompLogos from '../../../images/kaus-comp.svg';
-import Quote1 from '../../../images/kaus-quote-1.jpg';
-import Quote2 from '../../../images/kaus-quote-2.jpg';
-import Quote3 from '../../../images/kaus-quote-3.jpg';
-import Quote4 from '../../../images/kaus-quote-4.jpg';
-import Quote5 from '../../../images/kaus-quote-5.jpg';
+import CompLogos from '../../../images/keller-comp.svg';
 
 const getData = () => {
   return {
     description: (
-      <p>
-        First up, research. My goals were to find out <b>what</b> users need, their likes and dislikes, <b>why</b> they would switch providers, and <b>how</b> they shop currently. What was my method of discovery, and what did I uncover? 
-      </p>
+      <>
+        <p>
+          First up, research. My goals were to find out the current perception of the website. <b>What</b> do users like & dislike about the existing site, & <b>why?</b> I also wanted to pinpoint how users currently shop for instruments, and how they <b>feel</b> about the process.
+        </p>
+        <p>What was my method of discovery, and what did I uncover?</p>
+      </>
     ),
     ca_content: (
       <>
@@ -22,52 +20,66 @@ const getData = () => {
     ca_img: CompLogos,
     intvw_content: (
       <>
-        <p><b>What:</b> Talk to people one on one to learn more about their experiences with insurance.</p>
-        <p><b>Who:</b> Some participants had never had insurance & were shopping for the first time. Others have had all types of insurance for many years. One even worked in the insurance industry. Age range was 24-65.</p>
+        <p><b>What:</b> Talk to people 1 on 1 to learn about their experiences shopping for instruments.</p>
+        <p><b>Who:</b> 8 participants ranging in age from 30-65+. Keller Strings’ target audience: professional musicans, adult hobbyists, and “string moms.” 2 were not existing customers of Keller Strings.</p>
       </>
     ),
     intvw_quotes: [
       {
-        quote: `”It’s for that one time something catastrophic happens… a smart investment.” `,
-        img: Quote1,
+        quote: `“I didn’t realize violins are like cars, they really vary. I didn’t realize it was such a personal purchase.”`,
       },
       {
-        quote: `“If something made it seem like it was a straightforward, transparent process , I would go with them.”`,
-        img: Quote2,
+        quote: `“I could pick up all these things & play them, but it ain’t gonna sound like the best it can. Nobody’s asking me to test drive a racecar. No one’s going to know what it’s capable of if I get behind the wheel.”`,
       },
       {
-        quote: `“I would much rather spend an extra x amount of dollars to know that I feel a little more secured at the end of the day.”`,
-        img: Quote3,
+        quote: `“I didn’t know what to do with all the information, it was a bit overwhelming, but I liked that there was so much there.”`,
       },
       {
-        quote: `“(List) specifically what they do, so I don't have to go through a ton of different pages or read a bunch of paragraphs.”`,
-        img: Quote4,
+        quote: `“Honestly, it’s like when you look at people, you first look to see if they’re attractive or not. It’s human nature to look at the prettiest thing, so I’m looking at that. & price is definitely a factor.”`,
       },
       {
-        quote: `“They should be able to give you some sort of idea before you have to provide your life history.”`,
-        img: Quote5,
-      }
+        quote: `“I’m looking for somebody who’s experienced to tell me it’s high quality...I definitely want that feedback from a professional, hey this is really good and this is why.”"`,
+      },
+      {
+        quote: `“It’s very tricky with someone like me who doesn’t really know. I can appreciate good craftsmanship, I’m an art historian, but just because it sounds cool, it doesn’t really mean anything to me.”`,
+      },
     ],
+    margin: '9%',
     annoying: [
-      'No premade packages',
-      'Quote process is invasive.',
-      'Users have to provide a lot of personal information to wait and hear back about possible rates & coverage.',
-      'Vocabulary & subject matter is complex, confusing, and not all the terms are universal',
+      'Usually very cramped pages',
+      'None are very elegant',
+    ],
+    good: [
+      'Strong navigation & top menus',
+      'Neat, clean product grids'
     ],
     needs: [
-      'Easy, simple research',
-      'Fast signup process',
-      'Clear descriptions of offerings',
-      'Ability to compare coverage',
-      'Transparency',
-      'Personal connection',
-      'Customer-first service',
-      'Great customer ratings',
-      'Smooth claims process',
+      'Connection to an expert',
+      'Guidance',
+      'Great quality at affordable costs',
+      'Range of options',
+      'Convenience',
+      'Community'
     ],
-    closing: null,
-    report: <p>What else did I uncover? For a full report, go <u><a target="_blank" rel="noreferrer" href='https://docs.google.com/document/d/1I2RiyiFBaGRbeJDUVknTZ1tIwHVFETayyqw0ByokUYU/edit?usp=sharing'>here</a></u>.</p>
+    closing: closing(),
+    report: <p>What else did I uncover? For a full report, go <u><a target="_blank" rel="noreferrer" href='https://docs.google.com/presentation/d/1ZbsFr8dweATyhPZrQfG7ueY7nmnfiCtd8TAcKaJXqWk/edit?usp=sharing'>here</a></u>.</p>
   }
+}
+
+const closing = () => {
+  const bold = {fontWeight: 500}
+  const boldBlue = {
+    color: '#2E3F6B',
+    ...bold
+  }
+  return (
+    <>
+      <p>Keller Strings’ existing customers appreciate having a violin specialist nearby, and rave about the excellent customer service. They love the warmth of the shop, the resource center and string community the shop provides.</p>
+      <p>Although they do have a large customer base of professional musicians, the majority of Keller Strings’ customers are <span style={boldBlue}>novice players or parents of beginner students</span>. They generally feel overwhelmed at the amount of information in this new field, and flounder about where to begin. In terms of instruments, they know they want something of quality, but they are worried about overpaying. They don’t always understand the cost differences, or what makes a good instrument.</p>
+      <p>They rely on the owners, John & Paula, to guide them in the right direction, and count on them for their wealth of knowledge in the subject. </p>
+      <h4>My goal was clear: How can we recreate that warmth and guidance on the website?</h4>
+    </>
+  )
 }
 
 export default getData;

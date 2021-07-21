@@ -8,15 +8,18 @@ const Sect2 = () => {
   return (
     <section>
       <Process 
-        title='Research'
+        title='All Strung Out'
         desc={data.description}
       />
       <Analysis 
         ca_content={data.ca_content}
         ca_img={data.ca_img}
+        margin={data.margin}
         intvw_content={data.intvw_content} 
         intvw_quotes={data.intvw_quotes}
+        ulWidth={361}
         annoying={data.annoying}
+        good={data.good}
         needs={data.needs}
         closing={data.closing}
         report={data.report}

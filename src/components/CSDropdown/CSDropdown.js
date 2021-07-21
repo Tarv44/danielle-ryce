@@ -13,6 +13,7 @@ const Dropdown = (props) => {
     ? <UpCaret onClick={() => setOpen(false)}/>
     : <DownCaret onClick={() => setOpen(true)}/>
   const annoying = props.annoying.map((a, i) => <li key={i}>{a}</li>)
+  const good = props.good?.map((a, i) => <li key={i}>{a}</li>)
   const needs = props.needs.map((n, i) => <li key={i}>{n}</li>)
   return (
     <div className={styles.dropdown}> 
@@ -24,6 +25,12 @@ const Dropdown = (props) => {
           <ul style={{maxWidth: props.ulWidth}}>
             {annoying}
           </ul>
+          {props.good && <>
+              <h4 style={{marginTop: 36}}>What's Good</h4>
+              <ul style={{maxWidth: props.ulWidth}}>
+                {good}
+              </ul>
+            </>}
         </div>
         <div>
           <h4>What they need</h4>

@@ -3,9 +3,10 @@ import styles from './CSInterviews.module.css';
 import SmallCarousel from '../CSSmallCarousel/CSSmallCarousel';
 import QuoteCard from '../CSQuoteCard/CSQuoteCard';
 
-const Interviews = ({content, quotes}) => {
+const Interviews = ({content, quotes, margin}) => {
   const cards = quotes.map((q, i) => (
     <QuoteCard
+      margin={margin}
       img={q.img}
       quote={q.quote}
     />

@@ -6,6 +6,7 @@
   border-radius: 10px;
   padding: 30px 32px;
   margin-bottom: 30px;
+  margin: 0 16.4%;
 }
 
 .card hr {
@@ -22,7 +23,6 @@
 
 .content {
   min-height: 190.5px;
-  max-height: 190.5px;
   display: flex;
   flex-direction: row;
   align-items: center;

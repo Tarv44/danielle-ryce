@@ -1,9 +1,9 @@
 import React from 'react';
 import styles from './CSQuoteCard.module.css';
 
-const QuoteCard = ({img, quote}) => {
+const QuoteCard = ({img, quote, margin}) => {
   return (
-    <div className={styles.card}>
+    <div style={{marginLeft: margin, marginRight: margin}} className={styles.card}>
       <h5>They said things like:</h5>
       <hr />
       <div className={styles.content}>

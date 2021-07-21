@@ -14,8 +14,10 @@ const Analysis = (props) => {
     ca_content, 
     ca_img,
     annoying,
+    good,
     needs,
-    ulWidth
+    ulWidth,
+    margin
   } = props
   return (
     <section >
@@ -28,11 +30,13 @@ const Analysis = (props) => {
           <Interviews
             content={intvw_content}
             quotes={intvw_quotes}
+            margin={margin}
           />
         </div>
         <Dropdown
           ulWidth={ulWidth} 
           annoying={annoying}
+          good={good}
           needs={needs}
         />
       </section>

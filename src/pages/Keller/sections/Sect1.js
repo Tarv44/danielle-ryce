@@ -1,27 +1,26 @@
 import React from 'react';
 import Header from '../../../components/CSHeader/CSHeader';
 import Intro from '../../../components/CSIntro/CSIntro';
-import KausMac from '../../../images/kaus-mac.svg';
-import KausPhones from '../../../images/kaus-phones.svg';
+import KellerMac from '../../../images/keller-laptop.svg';
+import KausPhones from '../../../images/keller-phones.svg';
 
 const Sect1 = () => {
   return (
     <section>
         <Header 
-          title='Kaus'
+          title='Keller Strings'
           color='var(--color-blue)'
-          img={KausMac}
-          alt='Display for Kaus on laptop'
-          link='https://www.figma.com/proto/sejtmtXMAHA7F5zi4egkCS/Kaus-High-Fidelity-Screens?page-id=0%3A1&node-id=2%3A0&viewport=337%2C296%2C0.125&scaling=scale-down-width'
+          img={KellerMac}
+          alt='Display for Keller Strings on laptop'
+          link='https://www.figma.com/proto/vZbsmRQB4x5BSzIeUlVtPK/Keller-Strings-Prototype?page-id=0%3A1&node-id=1%3A132&viewport=343%2C359%2C0.125&scaling=scale-down-width'
         />
         <Intro 
-          title='Responsiv Ecommerce Website
-          Full Branding'
-          role='UX Designer / Dec-Feb ‘20-’21 '
+          title='Responsiv Ecommerce Website Full Redesign'
+          role='UX Designer / 4 Week Sprint / Mar - Apr ’21 '
           img={KausPhones}
           color='var(--color-blue)'
-          background='Kaus has been selling insurance policies business to business for the past 30 years. They sell prepared packages, with 350+ offerings, which allows them to provide insurance at low rates. Kaus wants to expand by selling policies to individuals.'
-          objective='To tap into the digital age, they know they need to reach a younger audience. Kaus is willing to break industry standards to provide their customers with a simple, efficient insurance shopping experience.'
+          background='Keller Strings relocated to a new part of town, and they feel like their website needs an upgrade as well! It hasn’t been changed since it was created in 2013, and it’s starting to look outdated.'
+          objective='Responsive, ecommerce website that provides all the basic shop information and also streamlines the existing shopping experience. New, elegant & modern branding that reflects their existing logo.'
         />
     </section>
   )
