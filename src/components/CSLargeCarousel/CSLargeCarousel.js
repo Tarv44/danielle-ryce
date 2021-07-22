@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import CarouselScreen from './CarouselScreen';
 import CarouselIndex from '../CarouselIndex';
+import styles from './CSLargeCarousel.module.css';
 
 const LargeCarousel = ({carousel_data}) => {
   const [index, setIndex] = useState(0)
@@ -15,7 +16,7 @@ const LargeCarousel = ({carousel_data}) => {
     else setIndex(index+1)
   }
   return (
-    <section>
+    <section className={styles.section}>
       <CarouselScreen 
         data={carousel_data}
         index={index}
