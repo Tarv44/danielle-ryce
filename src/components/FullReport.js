@@ -1,8 +1,8 @@
 import React from 'react';
 
-const FullReport = ({url}) => {
+const FullReport = ({url, color}) => {
   const divStyle = {
-    background: 'var(--color-bg-blue)',
+    background: color || 'var(--color-bg-blue)',
     display: 'inline-block',
     paddingLeft: 20,
     paddingRight: 20,

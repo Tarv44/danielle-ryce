@@ -1,0 +1,13 @@
+.intro {
+  text-align: left;
+  margin: 0 var(--cs-padding-horiz) 50px;
+}
+
+.intro h3 {
+  text-transform: uppercase;
+  font-size: 45px;
+}
+
+.intro p {
+  font-size: 28px;
+}

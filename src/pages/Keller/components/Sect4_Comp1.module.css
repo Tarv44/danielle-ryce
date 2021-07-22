@@ -1,0 +1,57 @@
+.div {
+  background: #ffffff;
+  position: relative;
+  display: flex;
+  padding: 33px 11.4% 33px 15%;
+}
+
+.labels {
+  display: flex;
+  flex-direction: row-reverse;
+  transform: rotate(-90deg);
+  position: absolute;
+  top: 45%;
+  left: 50px;
+  font-size: 18px;
+}
+
+.labels h4 {
+  text-transform: uppercase;
+  margin: 0;
+  padding: 10px 15px;
+  background: var(--color-bg-grey);
+}
+
+
+.labels h4:first-of-type {
+  margin-left: 148px;
+}
+
+.div p {
+  font-size: 18px;
+  position: absolute;
+  background: var(--color-bg-blue);
+  padding: 2px 30px;
+  max-width: 310px;
+}
+
+.p1 {
+  right: 90px;
+  top: 27.5%;
+}
+
+.p2 {
+  right: 86px;
+  bottom: 25%;
+}
+
+.p3 {
+  right: 86px;
+  bottom: 0%;
+}
+
+
+.div img {
+  width: 60%;
+  margin-left: 10%;
+}

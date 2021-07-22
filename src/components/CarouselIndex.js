@@ -4,7 +4,7 @@ import { FaCircle } from "react-icons/fa";
 import styles from './CarouselIndex.module.css';
 
 const CarouselIndex = (props) => {
-  const {length, index, setIndex} = props;
+  const {length, index, setIndex, arrowsOff} = props;
   const circles = []
   for (let i = 0; i < length; i++) {
     circles.push(
@@ -24,9 +24,9 @@ const CarouselIndex = (props) => {
   }
   return (
     <div className={styles.index}>
-      <AiFillCaretLeft onClick={handleLeft} className={styles.arrowLeft} />
+      {!arrowsOff && <AiFillCaretLeft onClick={handleLeft} className={styles.arrowLeft} />}
       {circles}
-      <AiFillCaretRight onClick={handleRight} className={styles.arrowRight} />
+      {!arrowsOff && <AiFillCaretRight onClick={handleRight} className={styles.arrowRight} />}
     </div>
   )
 }

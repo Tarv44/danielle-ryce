@@ -1,15 +1,14 @@
 import React from 'react';
 import gblStyles from '../../../global.module.css';
-import BW from '../../../images/kaus-wireframes-bw.jpg';
-import COLOR from '../../../images/kaus-wireframes-color.jpg';
+import LargeCarousel from '../../../components/CSLargeCarousel/CSLargeCarousel';
+import Component1 from '../components/Sect4_Comp1';
+import Component2 from '../components/Sect4_Comp2';
+import FullReport from '../../../components/FullReport';
 
 
 const Sect4 = () => {
   const weight = {fontWeight: 500}
-  const blue = {color: '#2E3F6B'}
-  const boldBlue = {...weight, ...blue}
   const divStyles = {
-    background: 'var(--color-bg-grey)',
     paddingTop: 40,
     paddingBottom: 40,
   }
@@ -21,21 +20,31 @@ const Sect4 = () => {
     paddingLeft: 22,
     background: '#ffffff'
   }
+
+  const carousel_data = [
+    {
+      component: <Component1 />,
+      color: 'var(--color-bg-blue)'
+    },
+    {
+      component: <Component2 />,
+      color: 'var(--color-bg-blue)'
+    },
+  ]
   return (
     <section style={{marginBottom: 150}}>
       <div className={`${gblStyles.csIntro} ${gblStyles.hPad}`}>
-        <h3>3. Design</h3>
-        <p>Next steps are to bring the product to life through branding. I identified a set of brand keywords: <span style={weight}>dependable, simple, and approachable</span>.</p>
-        <p>I used these adjectives to guide my stylistic choices, including typography, color palette, photo treatment, etc, and to lead me as I created the <span style={boldBlue}>logo</span> and <span style={boldBlue}>icon set</span>. This included design practices such as setting up a <span style={boldBlue}>moodboard and style guide</span>.</p>
-        <p style={{marginBottom: 0}}>I then bring the wireframes to life via high fidelity, fully designed screens, as seen below.</p>
-        <p style={{marginTop: 0}}><i>Wait for it, waiiiit for it...</i></p>
+        <h3>3. Fine Tuning</h3>
+        <p>Let’s see how this resonates. To make sure this website really sings, it needs to be as fit as a fiddle. So, <span style={weight}>I put it to the test</span>, user testing that is.</p>
+        <p><span style={weight}>I walked through a handful of tasks with participants</span> that included things like exploring the homepage, shopping for a violin, favoriting an item, and scheduling an appointment.</p>
+        <p>The testing uncovered a handful of sticking points, so I resolved them in the final iteration: </p>
       </div>
       <div style={{marginBottom: 25,...divStyles}}>
-        <img style={imgStyles} src={BW} alt="Black and white wireframes"/>
+        <LargeCarousel 
+          carousel_data={carousel_data}
+        />
       </div>
-      <div style={divStyles}>
-        <img style={imgStyles} src={COLOR} alt="Colored wireframes"/>
-      </div>
+      <FullReport url='https://miro.com/app/board/o9J_lLyqxfI=/' color='var(--color-bg-grey)'/>
     </section>
   )
 }
