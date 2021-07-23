@@ -12,14 +12,6 @@ const Sect4 = () => {
     paddingTop: 40,
     paddingBottom: 40,
   }
-  const imgStyles = {
-    borderRadius: 10,
-    paddingTop: 14,
-    paddingRight: 23,
-    paddingBottom: 8,
-    paddingLeft: 22,
-    background: '#ffffff'
-  }
 
   const carousel_data = [
     {

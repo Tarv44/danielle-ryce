@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import gblStyles from '../../../global.module.css';
 import LargeCarousel from '../../../components/CSLargeCarousel/CSLargeCarousel';
 import NewDevices from '../../../images/keller-new-devices.svg';

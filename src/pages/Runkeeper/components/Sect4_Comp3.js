@@ -11,8 +11,8 @@ const Component3 = (props) => {
         <p><i>“Is it to change the exercises or reps for the next round?”</i></p>
         <p><i>“It shows...what I...did?”</i></p>
       </div>
-      <img src={Img1} alt="" />
-      <img src={Img2} alt="" />
+      <img src={Img1} alt="Runkeeper early version on phone" />
+      <img src={Img2} alt="Runkeeper early version on phone" />
       <div>
         <p>Suggestions included changing the title</p>
         <p>Making it simpler to confirm or edit</p>

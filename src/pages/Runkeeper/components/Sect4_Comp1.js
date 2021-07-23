@@ -8,15 +8,15 @@ const Component1 = (props) => {
   return (
     <div className={styles.div}>
       <div>
-        <img src={Img1} alt="" />
+        <img src={Img1} alt="Runkeeper early version on phone" />
         <p>Participants set the timer, but didn't realize it automated the workout</p>
       </div>
       <div>
-        <img src={Img2} alt="" />
+        <img src={Img2} alt="Runkeeper early version on phone" />
         <p>One participant thought the timer set the break time between exercises</p>
       </div>
       <div>
-        <img src={Img3} alt="" />
+        <img src={Img3} alt="Runkeeper early version on phone" />
         <p>Another thought the interval timer would count down up here</p>
       </div>
     </div>

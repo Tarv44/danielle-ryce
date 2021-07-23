@@ -8,15 +8,15 @@ const Component2 = (props) => {
   return (
     <div className={styles.div}>
       <div>
-        <img src={Img1} alt="" />
+        <img src={Img1} alt="Runkeeper new version on phone" />
         <p>Replaced the clock with a settings icon. Consistent w/settings in running screen</p>
       </div>
       <div>
-        <img src={Img2} alt="" />
+        <img src={Img2} alt="Runkeeper new version on phone" />
         <p>Made sure to update the onboarding screens to reflect this change</p>
       </div>
       <div>
-        <img src={Img3} alt="" />
+        <img src={Img3} alt="Runkeeper new version on phone" />
         <p>Mirrored the existing settings screen to ensure comprehension</p>
       </div>
     </div>

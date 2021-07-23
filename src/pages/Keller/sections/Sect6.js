@@ -3,7 +3,6 @@ import ClosingCarousel from '../../../components/CSClosingCarousel/CSClosingCaro
 
 const Sect6 = () => {
   const med = {fontWeight: 500}
-  const semi = {fontWeight: 600}
   const boldBlue = {...med, color: '#2E3F6B'}
   const perk = (
     <div>
