@@ -1,0 +1,16 @@
+.div {
+  background: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  padding: 21px 70px;
+}
+
+.div > div {
+  max-width: 310px;
+}
+
+.div p {
+  background-color: var(--color-bg-grey);
+  padding: 3px 5px;
+  font-size: 18px;
+}

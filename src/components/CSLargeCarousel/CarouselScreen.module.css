@@ -8,6 +8,23 @@
   min-width: 100%;
 }
 
+.header {
+  text-transform: uppercase;
+}
+
+.header h4, .header h5 {
+  margin: 0;
+}
+
+.header h4 {
+  color: var(--color-drk-blue);
+  font-size: 32px;
+}
+.header h5 {
+  color: var(--color-blue);
+  font-size: 24px;
+}
+
 .display {
   display: flex;
   justify-content: center;

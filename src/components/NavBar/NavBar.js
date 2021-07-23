@@ -2,6 +2,7 @@ import React from 'react';
 import Logo from '../../images/header-logo.svg';
 import styles from './NavBar.module.css';
 import Nav from '../Nav/Nav';
+import { Link } from 'react-router-dom';
 
 const NavBar = (props) => {
     const home = props.location.pathname === '/'
@@ -11,7 +12,7 @@ const NavBar = (props) => {
         <header className={styles.header}>
             <div className={styles.pattern}></div>
             <div className={styles.content} style={contentStyle}>
-                {!home ? <img className={styles.logo} src={Logo} alt="Danielle Ryce logo" /> : null}
+                {!home ? <Link to={'/'}><img className={styles.logo} src={Logo} alt="Danielle Ryce logo" /></Link> : null}
                 <Nav className={styles.nav} home={home} about={about} />
             </div>
         </header>

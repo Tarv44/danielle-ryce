@@ -1,15 +1,45 @@
 import React from 'react';
 import gblStyles from '../../../global.module.css';
 import FullReport from '../../../components/FullReport';
+import LargeCarousel from '../../../components/CSLargeCarousel/CSLargeCarousel';
+import Component1 from '../components/Sect4_Comp1';
+import Component2 from '../components/Sect4_Comp2';
+import Component3 from '../components/Sect4_Comp3';
+import Component4 from '../components/Sect4_Comp4';
 
 
 const Sect4 = () => {
   const weight = {fontWeight: 500}
   const divStyles = {
-    background: 'var(--color-bg-grey)',
     paddingTop: 40,
     paddingBottom: 40,
   }
+  const carousel_data = [
+    {
+      color: 'var(--color-bg-grey)',
+      component: <Component1 />,
+      title: 'Interval Timer & Automation Option',
+      subtitle: 'Before'
+    },
+    {
+      color: 'var(--color-bg-blue)',
+      component: <Component2 />,
+      title: 'Interval Timer & Automation Option',
+      subtitle: 'After'
+    },
+    {
+      color: 'var(--color-bg-grey)',
+      component: <Component3 />,
+      title: 'Track Your Progress',
+      subtitle: 'Before'
+    },
+    {
+      color: 'var(--color-bg-blue)',
+      component: <Component4 />,
+      title: 'Track Your Progress',
+      subtitle: 'After'
+    },
+  ]
   return (
     <section style={{marginBottom: 150}}>
       <div className={`${gblStyles.csIntro} ${gblStyles.hPad}`}>
@@ -20,7 +50,7 @@ const Sect4 = () => {
         <p>See how I addressed the top 2 sticking points below:</p>
       </div>
       <div style={{marginBottom: 25,...divStyles}}>
-        <h2>Carousel</h2>
+        <LargeCarousel carousel_data={carousel_data} />
       </div>
       <FullReport url='https://miro.com/app/board/o9J_lCrrSxk=/'/>
     </section>
