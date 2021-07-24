@@ -27,3 +27,22 @@
 .csIntro p {
   font-size: 28px;
 }
+
+@media (max-width: 876px) {
+  
+
+  .csIntro h3 {
+    font-size: 28px;
+  }
+  
+  .csIntro p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 500px) {
+  .button {
+    font-size: 25px;
+    padding: 0 56px;
+  }
+}

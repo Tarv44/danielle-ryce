@@ -4,3 +4,15 @@
   align-items: center;
   margin-bottom: 90px;
 }
+
+@media (max-width: 876px) {
+  .section img {
+    width: 70%;
+  }
+}
+
+@media (max-width: 530px) {
+  .section img {
+    width: 100%;
+  }
+}

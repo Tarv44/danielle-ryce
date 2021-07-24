@@ -40,4 +40,61 @@
   width: 100%;
 }
 
+@media (max-width:1000px) {
+  .text h1 {
+    font-size: 38px;
+  }
 
+  .text p {
+    font-size: 18px;
+  }
+  .main {
+    position: relative;
+    justify-content: space-between;
+  }
+
+  .imgDiv {
+    top: 0px;
+  }
+
+  .aboutHeader > p  {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  /*  */
+
+  .imgDiv {
+    width: 250px;
+    left: 320px;
+  }
+  
+}
+
+@media (max-width: 615px) {
+  .imgDiv {
+    left: 250px;
+    max-width: 140px;
+    position: absolute;
+    top: 0px;
+  }
+  .text p:first-of-type {
+    width: 250px;
+  }
+  .text {
+    width: 80%
+  }
+}
+
+@media (max-width: 475px) {
+  .text p:first-of-type {
+    width: 186px;
+  }
+
+  .imgDiv {
+    position: absolute;
+    top: 20px;
+    left: 190px;
+    align-self: flex-end;
+  }
+}

@@ -8,7 +8,7 @@ import styles from './CardSect.module.css';
 
 const CardSect = () => {
   return (
-    <section id="projects" className={styles.sect}>
+    <section className={styles.sect}>
       <div className={styles.container}>
         <CaseCard 
           title={'Indicator'}

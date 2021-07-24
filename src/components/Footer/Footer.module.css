@@ -20,4 +20,15 @@
   background-size: cover;
   height: 100px;
   width: 100%;
+  border-radius: 0;
+}
+
+@media (max-width: 876px) {
+  .links {
+    display: none;
+  }
+  .pattern {
+    background-image: url('../../images/footer-pattern-mobile.svg');
+    height: 150px;
+  }
 }

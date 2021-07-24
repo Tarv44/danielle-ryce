@@ -1,4 +1,34 @@
 .bannerContainer {
   margin: 88px 0 0 81px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 876px) {
+  .main {
+    padding: 0 15px;
+  }
+  .header {
+    padding: 60px 45px 0;
+  }
+
+  .bannerContainer {
+    margin: 0;
+  }
+
+  .bannerContainer h2 {
+    text-transform: uppercase;
+    text-align: right;
+    font-weight: normal;
+    font-size: 18px;
+    max-width: 267px;
+    margin-right: 0;
+    align-self: flex-end;
+  }
+
+  .bannerContainer img {
+    width: 100%;
+  }
 }
 

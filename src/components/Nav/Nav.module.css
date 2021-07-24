@@ -14,3 +14,26 @@
 .active {
     color: var(--color-blue)
 }
+
+.exit {
+    display: none;
+}
+
+@media (max-width: 876px) {
+    .nav {
+        flex-direction: column;
+        align-items: flex-end;
+        margin: 15px 0 0;
+    }
+
+    .exit {
+        display: inline-block;
+        margin-right: 20px;
+        margin-bottom: 71px;
+    }
+
+    .link {
+        margin-right: 30px;
+        margin-bottom: 20px;
+    }
+}
