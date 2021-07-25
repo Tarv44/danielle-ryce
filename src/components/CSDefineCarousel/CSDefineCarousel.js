@@ -35,7 +35,7 @@ const DefineCarousel = ({title, desc, carousel_data}) => {
       <ProgressTabs 
         titles={titles}
         index={index}
-        setIndex={setIndex}  
+        setIndex={setIndex}
       />
       <CarouselScreen 
         data={carousel_data}

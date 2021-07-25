@@ -1,25 +1,43 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import gblStyles from '../../../global.module.css';
 import LargeCarousel from '../../../components/CSLargeCarousel/CSLargeCarousel';
 import Component1 from '../components/Sect4_Comp1';
 import Component2 from '../components/Sect4_Comp2';
+import Component3 from '../components/Sect4_Comp3';
 import FullReport from '../../../components/FullReport';
+import MobileContext from '../../../mobile.context';
 
 
 const Sect4 = () => {
+  const {isMobile} = useContext(MobileContext)
   const weight = {fontWeight: 500}
   const divStyles = {
     paddingTop: 40,
     paddingBottom: 40,
   }
 
-  const carousel_data = [
+  const desktop_data = [
     {
       component: <Component1 />,
       color: 'var(--color-bg-blue)'
     },
     {
       component: <Component2 />,
+      color: 'var(--color-bg-blue)'
+    },
+  ]
+
+  const mobile_data = [
+    {
+      component: <Component1 />,
+      color: 'var(--color-bg-blue)'
+    },
+    {
+      component: <Component2 />,
+      color: 'var(--color-bg-blue)'
+    },
+    {
+      component: <Component3/>,
       color: 'var(--color-bg-blue)'
     },
   ]
@@ -33,7 +51,7 @@ const Sect4 = () => {
       </div>
       <div style={{marginBottom: 25,...divStyles}}>
         <LargeCarousel 
-          carousel_data={carousel_data}
+          carousel_data={isMobile ? mobile_data : desktop_data}
         />
       </div>
       <FullReport url='https://miro.com/app/board/o9J_lLyqxfI=/' color='var(--color-bg-grey)'/>

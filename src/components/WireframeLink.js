@@ -9,7 +9,8 @@ const WireframeLink = ({url}) => {
     marginLeft: 55,
     marginRight: 55,
     borderRadius: 0,
-    fontSize: window.innerWidth < 525 ? 14 : 18
+    fontSize: window.innerWidth < 525 ? 14 : 18,
+    textAlign: 'center'
   }
   return (
     <div style={style}>

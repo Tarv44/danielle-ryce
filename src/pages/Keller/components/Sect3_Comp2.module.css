@@ -3,9 +3,13 @@
   flex-direction: row;
   align-items: center;
   background: var(--color-bg-blue);
-  padding: 30px 8.4%;
+  padding: 30px var(--cs-padding-horiz);
   width: 100%;
   justify-content: space-between;
+}
+
+.section img {
+  filter: drop-shadow(2px 4px 4px rgba(0, 0, 0, 0.1));
 }
 
 .content {
@@ -19,7 +23,10 @@
   margin-bottom: 0;
 }
 
-.content p {
+.content p,
+.content u,
+.content b,
+.content span {
   font-size: 20px;
   margin-top: 0;
 }
@@ -28,3 +35,21 @@
   margin-right: 20px;
 }
 
+@media (max-width: 1060px) {
+  .content {
+    max-width: 100%;
+    margin-right: 0;
+  }
+
+  .content button,
+  .content img {
+    min-width: 100%;
+    padding: 0;
+  }
+
+  .content h4 {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 25px;
+  }
+}

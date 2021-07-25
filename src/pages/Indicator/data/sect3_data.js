@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import Component1 from '../components/Sect3_Component1/Sect3_Component1';
 import Component2 from '../components/Sect3_Component2/Sect3_Component2';
 import Component3 from '../components/Sect3_Component3/Sect3_Component3';

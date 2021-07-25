@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from './ProgressTabs.module.css';
 import ProgressBar from './ProgressBar';
+import handleResize from '../../../handle-resize';
 
-const ProgressTabs = ({titles, index, setIndex}) => {
+const ProgressTabs = ({titles, index, setIndex, reduce}) => {
+  const [showHeadings, setHeadings] = useState(window.innerWidth > 1200)
   const selected = {
     color: 'var(--var-drk-purple)',
     textDecoration: 'underline solid'
@@ -17,12 +19,15 @@ const ProgressTabs = ({titles, index, setIndex}) => {
       {t}
     </button>
   ))
+  useEffect(() => {
+    handleResize(() => setHeadings(window.innerWidth > 1200))
+  }, [showHeadings])
   return (
     <div className={styles.progressBar}>
       <div className={styles.headings}>
-        {window.innerWidth > 1200 ? headings : null}
+        {showHeadings ? headings : null}
       </div>
-      <ProgressBar index={index} setIndex={setIndex} />
+      <ProgressBar index={index} setIndex={setIndex} reduce={titles.length === 4} />
     </div>
   )
 }

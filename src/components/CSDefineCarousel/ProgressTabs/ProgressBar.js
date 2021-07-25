@@ -1,20 +1,20 @@
 import React, {useState, useEffect} from 'react';
 
-const ProgressBar = ({index, setIndex}) => {
+const ProgressBar = ({index, setIndex, reduce}) => {
   const breakPoint = 1200
-  const [five, setFive] = useState(window.innerWidth > breakPoint)
+  const [five, setFive] = useState(window.innerWidth > breakPoint || !reduce)
   const [width, setWidth] = useState(window.innerWidth * .7)
   
   useEffect(() => {
     const handleResize = () => {
       const newWidth = window.innerWidth*.7
-      setFive(window.innerWidth > breakPoint ? true : false)
+      setFive(window.innerWidth > breakPoint || !reduce )
       setWidth(newWidth)
     }
 
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
-  }, []);
+  }, [reduce]);
 
   return (
     <svg width={width} height="15" viewBox={`0 0 ${width} 15`} fill="none" xmlns="http://www.w3.org/2000/svg">

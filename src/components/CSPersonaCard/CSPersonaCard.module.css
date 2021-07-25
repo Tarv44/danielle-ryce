@@ -6,6 +6,7 @@
   width: 100%;
   padding: 20px 25px 22px;
   background: #ffffff;
+  position: relative;
 }
 
 .card ul {
@@ -54,15 +55,15 @@
   text-transform: uppercase;
   margin: 0;
   color: var(--color-drk-purple);
-  transform: translateX(-24px);
-  z-index: 2;
   /* min-width: 100%; */
   position: absolute;
+  left: 150px;
 }
 
 .details ul{
   margin-top: 50px;
   position: absolute;
+  left: 170px;
 }
 
 .details li {
@@ -122,12 +123,18 @@
     width: 100px;
     height: 100px;
   }
-  .chars_str p {
-    margin-top: 65px;
+  .chars_str {
+    top: 180px;
+    font-size: 18px;
   }
 
   .details ul {
-    transform: translateX(-20px) translateY(-8px);
+    top: 40px;
+    left: 130px
+  }
+
+  .details h5 {
+    left: 120px;
   }
 }
 
@@ -142,7 +149,24 @@
   .chars_str p {
     margin-top: 10px;
   }
+  .details ul {
+    top: initial;
+    left: initial
+  }
+  .details h5 {
+    left: 170px;
+  }
+  .chars_str {
+    top: initial;
+    font-size: 20px;
+  }
 }
+
+/* @media (max-width: 876px) {
+  .details h5 {
+    left: 170px;
+  }
+} */
 
 @media (max-width: 750px) {
   .card h5 {
@@ -161,6 +185,9 @@
   }
   .chars_str p {
     margin-top: 30px;
+  }
+  .details h5 {
+    left: 140px;
   }
 }
 
@@ -208,5 +235,9 @@
   }
   .card > div {
     margin: 0;
+  }
+
+  .details h5 {
+    left: 80px;
   }
 }

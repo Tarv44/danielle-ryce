@@ -1,14 +1,12 @@
-import React, {useState, useEffect, useContext} from 'react';
+import React, {useState, useEffect} from 'react';
 import Logo from '../../images/header-logo.svg';
 import styles from './NavBar.module.css';
 import Nav from '../Nav/Nav';
 import { Link } from 'react-router-dom';
 import handleResize from '../../handle-resize';
 import {FiMenu} from 'react-icons/fi';
-import MobileContext from '../../mobile.context';
 
 const NavBar = (props) => {
-    const {isMobile} = useContext(MobileContext)
     const mobileBreak = 877
     const [isOpen, setIsOpen] = useState(false)
     const home = props.location.pathname === '/'

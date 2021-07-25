@@ -1,4 +1,4 @@
-import React, {useContext, useEffect} from 'react';
+import React, {useContext} from 'react';
 import Banner from '../../images/landing-banner.svg';
 import Logo from '../../images/header-logo.svg';
 import MissionSect from '../../components/page_landing/MissionSect/MissionSect';
@@ -14,7 +14,7 @@ const Landing = () => {
             <header className={styles.header}>
                 <div className={styles.bannerContainer}>
                     {isMobile && <div>
-                        <img src={Logo} />
+                        <img src={Logo} alt="Danielle Ryce logo"/>
                         <h2>Your Friendly Neighborhood UX Designer</h2>    
                     </div>}
                     {!isMobile && <img src={Banner} alt="Text stating 'Danielle Ryce, your friendly neighborhood ux designer'"/>}

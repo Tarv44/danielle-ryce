@@ -8,7 +8,7 @@ const CarouselIndex = (props) => {
   const circles = []
   for (let i = 0; i < length; i++) {
     circles.push(
-      <button onClick={() => setIndex(i)}>
+      <button key={i} onClick={() => setIndex(i)}>
         <FaCircle key={i} style={{opacity: index === i && 1}} className={styles.circle}/>
       </button>
     )

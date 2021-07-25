@@ -1,10 +1,18 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from './CarouselScreen.module.css';
 import Left from '../../images/arrow-left.svg';
 import Right from '../../images/arrow-right.svg';
+import CarouselIndex from '../CarouselIndex';
+import handleResize from '../../handle-resize';
 
 const CarouselScreen = (props) => {
-  const {index, data, handleLeft, handleRight} = props
+  const [isVert, setIsVert] = useState(window.innerWidth <= 1200)
+  const [smallArw, setSmallArw] = useState(window.innerWidth <= 876)
+  const {index, data, handleLeft, handleRight, setIndex} = props
+  useEffect(() => {
+    handleResize(() => setIsVert(window.innerWidth <= 1200))
+    handleResize(() => setSmallArw(window.innerWidth <= 876))
+  }, [isVert, smallArw])
   return (
     <div style={{background: data[index].color}} className={styles.screen}>
       {data[index].title && <div className={styles.header}>
@@ -12,12 +20,13 @@ const CarouselScreen = (props) => {
         <h5>{data[index].subtitle}</h5>
       </div>}
       <div className={styles.display}>
-        <button style={{display: index === 0 && 'none' }} className={styles.left} onClick={handleLeft}><img src={Left} alt="left-arrow"/></button>
+        {!isVert && <button style={{display: index === 0 && 'none' }} className={styles.left} onClick={handleLeft}><img src={Left} alt="left-arrow"/></button>}
         <div className={styles.component}>
           {data[index].component}
         </div>
-        <button style={{display: index === data.length-1 && 'none' }} className={styles.right} onClick={handleRight}><img src={Right} alt="right-arrow"/></button>
+        {!isVert && <button style={{display: index === data.length-1 && 'none' }} className={styles.right} onClick={handleRight}><img src={Right} alt="right-arrow"/></button>}
       </div>
+      {isVert && <CarouselIndex length={data.length} index={index} setIndex={setIndex} />}
     </div>
   )
 }

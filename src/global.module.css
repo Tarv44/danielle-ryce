@@ -24,7 +24,11 @@
   text-transform: uppercase;
 }
 
-.csIntro p {
+.csIntro p,
+.csIntro u,
+.csIntro b,
+.csIntro a,
+.csIntro span {
   font-size: 28px;
 }
 
@@ -35,7 +39,11 @@
     font-size: 34px;
   }
   
-  .csIntro p {
+  .csIntro p,
+  .csIntro u,
+  .csIntro b,
+  .csIntro a,
+  .csIntro span  {
     font-size: 24px;
   }
 }
@@ -46,7 +54,11 @@
     font-size: 28px;
   }
   
-  .csIntro p {
+  .csIntro p,
+  .csIntro u,
+  .csIntro b,
+  .csIntro a,
+  .csIntro span  {
     font-size: 18px;
   }
 }

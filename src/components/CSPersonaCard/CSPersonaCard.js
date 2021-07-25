@@ -22,7 +22,7 @@ const PersonaCard = (props) => {
           </div>
         </div>
         <div className={styles.chars_str}>
-          <p style={{fontSize: props.charSize}}>{chars_str}</p>
+          <p >{chars_str}</p>
         </div>
       </div>
       <div className={styles.goals}>

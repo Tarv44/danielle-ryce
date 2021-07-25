@@ -16,10 +16,10 @@ import Runkeeper from './pages/Runkeeper/Runkeeper';
 import Keller from './pages/Keller/Keller';
 
 const App = (props) => {
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 876)
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 877)
   useEffect(() => {
     const callBack = () => {
-      setIsMobile(window.innerWidth < 876)
+      setIsMobile(window.innerWidth < 877)
     }
     handleResize(callBack)
   }, [])

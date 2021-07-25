@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from './Sect5.module.css';
 import gblStyles from '../../../global.module.css';
 import Logo from '../../../images/indicator-sect5-logo.svg';
@@ -8,7 +8,6 @@ import Body2 from '../../../images/indicator-body-mobile.svg';
 import Pallette from '../../../images/indicator-sect5-pallette.svg';
 import Pallette2 from '../../../images/indicator-pallette-mobile.svg';
 import Pattern from '../../../images/indicator-sect5-pattern.svg';
-import MobileContext from '../../../mobile.context';
 import handleResize from '../../../handle-resize';
 
 const Sect5 = () => {
