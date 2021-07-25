@@ -1,0 +1,33 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 0 150px;
+}
+
+.div {
+  width: 100%;
+}
+.wireframeDiv {
+  width: 100%;
+  margin: 0 0 50px;
+  background: var(--color-bg-blue);
+  padding: 40px var(--cs-padding-horiz);
+}
+
+.wireframe {
+  background: #ffffff;
+  padding: 20px;
+}
+
+@media (max-width: 525px) {
+  .wireframeDiv {
+    padding: 15px;
+    margin: 0 0 35px;
+  }
+
+  .section {
+    margin: 0 0 100px;
+  }
+}
+

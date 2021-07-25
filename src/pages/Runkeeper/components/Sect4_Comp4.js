@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Sect4_Comp1.module.css';
+import styles from './Sect4_Comp4.module.css';
 import Img1 from '../../../images/runkeeper-track-after-1.svg';
 import Img2 from '../../../images/runkeeper-track-after-2.svg';
 import Img3 from '../../../images/runkeeper-track-after-3.svg';

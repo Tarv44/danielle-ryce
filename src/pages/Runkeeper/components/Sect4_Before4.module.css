@@ -1,12 +1,15 @@
 .div {
   background: #ffffff;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   padding: 21px 70px;
 }
 
 .div > div {
   margin-right: 5px;
+  display: flex;
+  align-items: center;
 }
 .div > div:last-of-type {
   margin-right: 0;
@@ -28,7 +31,6 @@
     padding: 10px 15px;
   }
 }
-
 @media (max-width: 650px) {
   .div {
     padding: 25px 20px;

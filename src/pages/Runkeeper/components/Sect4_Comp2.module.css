@@ -6,7 +6,10 @@
 }
 
 .div > div {
-  max-width: 310px;
+  margin-right: 5px;
+}
+.div > div:last-of-type {
+  margin-right: 0;
 }
 
 .div p {

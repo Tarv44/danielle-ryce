@@ -2,11 +2,19 @@
   background: #ffffff;
   display: flex;
   justify-content: space-between;
-  padding: 21px 70px;
+  padding: 21px 20px;
 }
 
 .div > div {
-  max-width: 310px;
+  margin-right: 5px;
+}
+.div > div:last-of-type {
+  margin-right: 0;
+}
+
+.div > div:last-of-type p {
+  position: relative;
+  top: -11px;
 }
 
 .div p {

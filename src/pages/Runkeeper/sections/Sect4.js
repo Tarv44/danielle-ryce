@@ -1,45 +1,28 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import gblStyles from '../../../global.module.css';
 import FullReport from '../../../components/FullReport';
 import LargeCarousel from '../../../components/CSLargeCarousel/CSLargeCarousel';
-import Component1 from '../components/Sect4_Comp1';
-import Component2 from '../components/Sect4_Comp2';
-import Component3 from '../components/Sect4_Comp3';
-import Component4 from '../components/Sect4_Comp4';
+import data from '../data/sect4_data';
+import handleResize from '../../../handle-resize';
 
 
 const Sect4 = () => {
+  const [isVert, setIsVert] = useState(window.innerWidth<=1200)
   const weight = {fontWeight: 500}
   const divStyles = {
     paddingTop: 40,
     paddingBottom: 40,
   }
-  const carousel_data = [
-    {
-      color: 'var(--color-bg-grey)',
-      component: <Component1 />,
-      title: 'Interval Timer & Automation Option',
-      subtitle: 'Before'
-    },
-    {
-      color: 'var(--color-bg-blue)',
-      component: <Component2 />,
-      title: 'Interval Timer & Automation Option',
-      subtitle: 'After'
-    },
-    {
-      color: 'var(--color-bg-grey)',
-      component: <Component3 />,
-      title: 'Track Your Progress',
-      subtitle: 'Before'
-    },
-    {
-      color: 'var(--color-bg-blue)',
-      component: <Component4 />,
-      title: 'Track Your Progress',
-      subtitle: 'After'
-    },
-  ]
+  const hrStyle = {
+    marginTop: 35, 
+    marginBottom: 35,
+    marginRight: 'var(--cs-padding-horiz)',
+    marginLeft: 'var(--cs-padding-horiz)',
+    border: '0.5px solid #2285C5'
+  }
+  useEffect(() => {
+    handleResize(() => setIsVert(window.innerWidth<=1200))
+  }, [isVert])
   return (
     <section style={{marginBottom: 150}}>
       <div className={`${gblStyles.csIntro} ${gblStyles.hPad}`}>
@@ -50,9 +33,19 @@ const Sect4 = () => {
         <p>See how I addressed the top 2 sticking points below:</p>
       </div>
       <div style={{marginBottom: 25,...divStyles}}>
-        <LargeCarousel carousel_data={carousel_data} />
+        {!isVert && <LargeCarousel carousel_data={data.large} />}
+        {isVert && <>
+          <LargeCarousel carousel_data={data.int_before} />
+          <LargeCarousel carousel_data={data.int_after} />
+          <hr style={hrStyle}/>
+          <LargeCarousel carousel_data={data.track_before} />
+          <LargeCarousel carousel_data={data.track_after} />
+        </>}
       </div>
-      <FullReport url='https://miro.com/app/board/o9J_lCrrSxk=/'/>
+      <div style={{marginRight: 68, marginLeft: 68}}>
+        <FullReport url='https://miro.com/app/board/o9J_lCrrSxk=/'/>
+      </div>
+      
     </section>
   )
 }

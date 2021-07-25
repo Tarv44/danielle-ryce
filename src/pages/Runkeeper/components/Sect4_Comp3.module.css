@@ -9,6 +9,13 @@
   width: 252px;
 }
 
+.div > * {
+  margin-right: 5px;
+}
+.div > *:last-child {
+  margin-right: 0;
+}
+
 .div > div {
   max-width: 185px;
 }
