@@ -22,8 +22,8 @@ const ProgressBar = ({index, setIndex}) => {
       <circle onClick={() => setIndex(0)} cx="9" cy="7.5" r="7" fill={index === 0 ? "#585799" : "white"} stroke="#585799"/>
       <circle onClick={() => setIndex(1)} cx={five ? width*.25 : width*.33} cy="7.5" r="7" fill={index === 1 ? "#585799" : "white"} stroke="#585799"/>
       {five && <circle onClick={() => setIndex(2)} cx={width/2} cy="7.5" r="7" fill={index === 2 ? "#585799" : "white"} stroke="#585799"/>}
-      <circle onClick={() => setIndex(3)} cx={five ? width*.75 : width*.66} cy="7.5" r="7" fill={index === 3 ? "#585799" : "white"} stroke="#585799"/>
-      <circle onClick={() => setIndex(4)} cx={width-9} cy="7.5" r="7" fill={index === 4 ? "#585799" : "white"} stroke="#585799"/>
+      <circle onClick={() => setIndex(five ? 3 : 2)} cx={five ? width*.75 : width*.66} cy="7.5" r="7" fill={(five && index === 3) || (!five && index === 2) ? "#585799" :  "white"} stroke="#585799"/>
+      <circle onClick={() => setIndex(five ? 4 : 3)} cx={width-9} cy="7.5" r="7" fill={(five && index === 4) || (!five && index === 3) ? "#585799" : "white"} stroke="#585799"/>
     </svg>
 
   )

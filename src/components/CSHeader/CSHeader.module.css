@@ -1,5 +1,6 @@
 .header {
   padding-bottom: 52px;
+  padding: 0 var(--cs-padding-horiz);
 }
 
 .img {
@@ -24,11 +25,35 @@
 .intro h1 {
   font-size: 64px;
   color: var(--color-blue);
-  margin-top: 10vh;
+  margin-top: 100px;
 }
 
 .intro h2 {
   font-size: 45px;
   color: var(--color-lgt-purple);
   margin-bottom: 65px;
+}
+
+@media (max-width: 876px) {
+  .intro h1 {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 725px) {
+  .img {
+    padding: 7px 23px;
+    min-height: 0;
+  }
+}
+
+@media (max-width: 525px) {
+  .intro h1 {
+    font-size: 38px;
+    line-height: 20px;
+  }
+
+  .intro h2 {
+    font-size: 28px;
+  }
 }

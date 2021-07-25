@@ -1,13 +1,15 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import gblStyles from '../../../global.module.css';
 import Signup from '../../../images/indicator-signup.svg';
 import PrototypeLink from '../../../components/CSPrototypeLink';
+import MobileContext from '../../../mobile.context';
 
 const Sect6 = () => {
+  const {isMobile} = useContext(MobileContext)
   const signupStyle = {
     background: 'var(--color-bg-blue)',
-    paddingTop: 69,
-    paddingBottom: 69,
+    paddingTop: !isMobile ? 69 : 25,
+    paddingBottom: !isMobile ? 69 : 25,
     marginBottom: 50
   }
   return (

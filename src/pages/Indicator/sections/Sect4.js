@@ -1,10 +1,19 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from './Sect4.module.css';
 import gblStyles from '../../../global.module.css';
-import WF_full from '../../../images/indicator-sect4-full.svg';
+import Before from '../../../images/indicator-sect4-before.svg';
+import After1 from '../../../images/indicator-sect4-after-1.svg';
+import After2 from '../../../images/indicator-sect4-after-2.svg';
+import After2Left from '../../../images/indicator-sect4-after-2-left.svg';
 import FullReport from '../../../components/FullReport';
+import handleResize from '../../../handle-resize';
 
 const Sect4 = () => {
+  const [width, setWidth] = useState(window.innerWidth)
+  useEffect(() => {
+    const callback = () => setWidth(window.innerWidth)
+    handleResize(callback)
+  }, [])
   return (
     <section className={styles.sect4}>
       <div className={`${gblStyles.csIntro} ${styles.intro}`}>
@@ -15,17 +24,35 @@ const Sect4 = () => {
         <p>See how this stupid decided to keep it simple:</p>
       </div>
       <div>
-        <div className={styles.headings}>
-          <h4 className={styles.before}>Before</h4>
-          <h4 className={styles.after}>After</h4>
-        </div>
         <div className={styles.wireframe}>
-          <img src={WF_full} alt="Before and after wireframes"/>
-          <p className={styles.p1}>Cute, but a little confusing. Participants were not clear on what an Indicator was</p>
-          <p className={styles.p2}>Clear description of what indicators are</p>
-          <p className={styles.p3}>Way too many options, causes overwhelm</p>
-          <p className={styles.p4}>Separated into “packs” based off of user’s long term goals</p>
-          <p className={styles.p5}>Option to make their own “pack” via this card</p>
+          <div>
+          <h4 className={styles.before}>Before</h4>
+            <div className={styles.left}>
+              <img className={styles.beforeImg} src={Before} alt="Before wireframes"/>
+              <div className={styles.paras1}>
+                <p className={styles.p1}>Cute, but a little confusing. Participants were not clear on what an Indicator was</p>
+                {width >= 1220 && <p className={styles.p2}>Clear description of what indicators are</p>}
+                <p className={styles.p3}>Way too many options, causes overwhelm</p>
+              </div>
+            </div>
+          </div>
+          {width < 1220 && <hr />}
+          <div>
+            <h4 className={styles.after}>After</h4>
+            <div className={styles.right}>
+              <div>
+                {width < 1220 && <p className={styles.p2}>Clear description of what indicators are</p>}
+                <img src={After1} alt="After wireframes"/>
+                {width >= 1220 && <><p className={styles.p4}>Separated into “packs” based off of user’s long term goals</p>
+                <p className={styles.p5}>Option to make their own “pack” via this card</p></>}
+              </div>
+              <div>
+                <img src={width < 1220 ? After2Left : After2} alt="After wireframes" />
+                {width < 1220 && <div><p className={styles.p4}>Separated into “packs” based off of user’s long term goals</p>
+                  <p className={styles.p5}>Option to make their own “pack” via this card</p></div>}
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <FullReport url='https://miro.com/app/board/o9J_l9ou9MQ=/' />

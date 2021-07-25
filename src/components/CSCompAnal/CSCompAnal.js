@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import styles from './CSCompAnal.module.css';
+import Dropdown from '../CSDropdown/CSDropdown';
+import MobileContext from '../../mobile.context';
 
 
-const CompAnal = ({content, img}) => {
+const CompAnal = ({content, img, annoying, good}) => {
+  const {isMobile} = useContext(MobileContext)
   return (
     <div className={styles.compAnal}>
       <div>
@@ -10,6 +13,11 @@ const CompAnal = ({content, img}) => {
         {content}
       </div>
       <img src={img} alt="Competing companies' logos"/>
+      {isMobile && <Dropdown 
+        annoying={annoying}
+        good={good}
+        single={true}
+      />}
     </div>
   )
 }

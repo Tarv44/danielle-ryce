@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import styles from './CSAnalysis.module.css';
 
 import CompAnal from '../CSCompAnal/CSCompAnal';
 import Interviews from '../CSInterviews/CSInterviews';
 import Dropdown from '../CSDropdown/CSDropdown';
+import MobileContext from '../../mobile.context';
 
 const Analysis = (props) => {
+  const {isMobile} = useContext(MobileContext)
   const {
     intvw_content, 
     intvw_quotes, 
@@ -26,19 +28,22 @@ const Analysis = (props) => {
           <CompAnal 
             content={ca_content}
             img={ca_img}
+            annoying={annoying}
+            good={good}
           />
           <Interviews
             content={intvw_content}
             quotes={intvw_quotes}
             margin={margin}
+            needs={needs}
           />
         </div>
-        <Dropdown
+        {!isMobile && <Dropdown
           ulWidth={ulWidth} 
           annoying={annoying}
           good={good}
           needs={needs}
-        />
+        />}
       </section>
       <section className={styles.closing}>
         {closing}

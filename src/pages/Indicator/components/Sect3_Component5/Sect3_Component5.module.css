@@ -1,9 +1,11 @@
 .comp5 {
   display: flex;
-  align-items: flex-start;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
   padding: 17px 13px 0;
   background: #ffffff;
+  position: relative;
+  width: 100%;
 }
 
 .comp5 > div {
@@ -11,7 +13,7 @@
   flex-direction: column;
   justify-content: space-between;
   min-height: 100%;
-  max-width: 26.1%;
+  max-width: 25%;
 }
 .comp5 > div > div {
   padding: 10px;
@@ -33,7 +35,7 @@
 }
 
 .left {
-  
+  left: 5px;
 }
 
 .left > div { 
@@ -44,4 +46,62 @@
 .right > div { 
   background: var(--color-bg-grey);
   margin-bottom: 23px;
+}
+
+@media (max-width:1350px) {
+  .comp5 p {
+    font-size: 14px;
+  }
+}
+@media (max-width:1200px) {
+  .comp5 p {
+    font-size: 18px;
+  }
+}
+@media (max-width:760px) {
+  .comp5 p {
+    font-size: 16px;
+  }
+  .comp5 img {
+    max-width: 280px;
+  }
+}
+@media (max-width:650px) {
+  .comp5 p {
+    font-size: 14px;
+  }
+  .comp5 img {
+    max-width: 250px;
+  }
+}
+@media (max-width:580px) {
+  .comp5 p {
+    font-size: 10px;
+  }
+  .comp5 img {
+    max-width: 200px;
+  }
+
+  .comp5 {
+    padding: 5px 5px 0;
+  }
+}
+@media (max-width:525px) {
+  .comp5 p {
+    font-size: 7.5px;
+  }
+  .comp5 img {
+    max-width: 142px;
+  }
+  .left > div {
+    margin-bottom: 4px;
+  }
+  .right > div {
+    margin-bottom: 10px;
+  }
+
+  .comp5 > div > div {
+    padding: 4.3px;
+    border-radius: 4.3px;
+  }
 }

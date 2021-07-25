@@ -28,7 +28,18 @@
   font-size: 28px;
 }
 
-@media (max-width: 876px) {
+@media (max-width: 800px) {
+  
+
+  .csIntro h3 {
+    font-size: 34px;
+  }
+  
+  .csIntro p {
+    font-size: 24px;
+  }
+}
+@media (max-width: 525px) {
   
 
   .csIntro h3 {

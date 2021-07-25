@@ -11,8 +11,7 @@
 
 .logo,
 .heading,
-.right,
-.bottom > div {
+.right {
   background: #F5F5F5;
 }
 
@@ -24,13 +23,17 @@
   align-items: center;
 }
 
+.typo {
+  font-size: 24px;
+}
+
 .top {
   margin-bottom: 51px;
 }
 
 .heading {
   display: inline-block;
-  padding: 15px 115px;
+  padding: 15px 16%;
   margin-right: 102px;
 }
 
@@ -44,12 +47,79 @@
   padding: 25px 29px 19px;
   align-self: flex-end;
 }
+.left {
+  margin-right: 50px;
+}
 
 .pallette, .pattern{
-  width: 500px;
-  height: 500px;
+  background: #F5F5F5;
 }
 
 .pallette {
   padding: 25px 20px 9px 17px;
+  margin-right: 20px;
+}
+
+@media (max-width: 1200px) {
+  .styleGuide {
+    padding: 0 100px;
+  }
+  .typo {
+    display: none;
+  }
+  .heading {
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .right {
+    padding: 10px;
+  }
+
+
+  .logo {
+    padding: 0 35px;
+  }
+}
+
+@media (max-width: 876px) {
+  .styleGuide {
+    padding: 0 var(--cs-padding-horiz);
+  }
+  .sect5 {
+    margin-bottom: 100px;
+  }
+}
+
+@media (max-width: 525px) {
+  .top {
+    margin-bottom: 15px;
+  }
+  .logo {
+    margin-bottom: 0;
+  }
+
+  .pallette {
+    margin: 0;
+    padding: 7px 10px 10px;
+  }
+  .heading {
+    margin-bottom: 15px;
+  }
+
+  .left {
+    min-width: 55%;
+    margin-right: 15px;
+  }
+  .right {
+    background: #ffffff;
+    align-self: flex-start;
+    width: 100%;
+    padding: 0;
+  }
+  .body {
+    margin-bottom: 10px;
+    background: #F5F5F5;
+    padding: 13px 10px 11px
+  }
 }

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Component1 from '../components/Sect3_Component1/Sect3_Component1';
 import Component2 from '../components/Sect3_Component2/Sect3_Component2';
 import Component3 from '../components/Sect3_Component3/Sect3_Component3';
@@ -8,12 +8,17 @@ import Component5 from '../components/Sect3_Component5/Sect3_Component5';
 const data = () => {
   const bold = {fontWeight: 500}
   const green = {color: 'var(--color-green)'}
+  // const {isMobile} = useContext(MobileContext)
   return {
     title: `WHY BIZNEST FLEW THE COOP`,
     desc: (
       <>
         <p>Already, <span style={bold}>research had drastically evolved the app from my original idea into something else entirely</span>. But even after the myriad of brainstorms, the could-be solutions, the focus-shifts, and even after the name changes... there was still so much more growth to come!</p>
-        <p><span style={{...bold, ...green}}>After synthesizing and defining my research, it resulted in the following wireframes.</span> However, if you love a good background story, click through to see the evolution.</p>
+        {!(window.innerWidth < 876) 
+          ?<p><span style={{...bold, ...green}}>After synthesizing and defining my research, it resulted in the following wireframes.</span> However, if you love a good background story, click through to see the evolution.</p>
+          : <><p><span style={{...bold, ...green}}>After synthesizing and defining my research, it resulted in the following wireframes.</span></p>
+            <div style={{background: 'var(--color-bg-grey)',marginLeft: -15, marginRight: -15, padding: 15, borderRadius:0}}><Component1 /></div>
+            <p>However, if you love a good background story, click through to see the evolution.</p></>}
         <p><i>Pstttt, For the big <span style={bold}>EUREKA</span> moment, skip to the SME Interview tab.</i></p>
       </>
     ),

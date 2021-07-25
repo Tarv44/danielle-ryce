@@ -1,9 +1,5 @@
-.intvw {
-  width: 50%;
-}
-
 .content {
-  padding: 0 16.4%;
+  padding: 0 16.8%;
 }
 
 .content h4 {
@@ -28,4 +24,33 @@
 
 .intvw img {
   max-width: 100%;
+}
+
+@media (max-width: 876px) {
+  .content {
+    padding: 0;
+  }
+
+  .intvw div:nth-child(even) {
+    margin-bottom: 50px;
+  }
+  .intvw {
+    background: var(--color-bg-blue);
+  }
+  .intvw img {
+    max-width: 80%;
+    margin: auto;
+  }
+}
+
+@media (max-width: 525px) {
+  .intvw h4 {
+    font-size: 24px;
+  }
+  .intvw p {
+    font-size: 18px;
+  }
+  .compAnal img {
+    max-width: 100%;
+  }
 }

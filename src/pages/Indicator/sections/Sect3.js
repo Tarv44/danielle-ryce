@@ -19,7 +19,7 @@ const Sect3 = () => {
   }, [data.carousel]);
 
   return (
-    <section>
+    <section style={{marginBottom: 100}}>
       <DefineCarousel title={data.title} desc={data.desc} carousel_data={carousel} />
       <WireframeLink url='https://www.figma.com/exit?url=https%3A%2F%2Fwww.figma.com%2Ffile%2FULopdih9v1tzAtZTkc7V0v%2FIndicator-Wireframes%3Fnode-id%3D16%253A0' />
     </section>

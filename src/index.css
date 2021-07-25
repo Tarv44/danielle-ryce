@@ -63,7 +63,7 @@ img {
 
 @media (max-width: 876px) {
   html {
-    --cs-padding-horiz: 20px;
+    --cs-padding-horiz: 15px;
     --padding-horiz: 50px;
   }
   

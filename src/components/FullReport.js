@@ -12,7 +12,7 @@ const FullReport = ({url, color}) => {
   }
   const pStyle = {
     margin: 0,
-    fontSize: 18
+    fontSize: window.innerWidth < 525 ? 14 : 18
   }
   return (
     <div style={divStyle}>

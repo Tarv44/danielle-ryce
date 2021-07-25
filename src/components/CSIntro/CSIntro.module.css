@@ -4,8 +4,6 @@
 }
 
 .header {
-  max-width: 50%;
-  margin: auto;
   margin-bottom: 57px;
   display: flex;
   flex-direction: column;
@@ -37,8 +35,9 @@
   border-radius: 10px;
   margin-right: 40px;
 }
-.img img {
+img.img {
   background: rgba(0,0,0,0);
+  width: 100%;
 }
 
 .summary {
@@ -58,4 +57,36 @@
 
 .summary p {
   font-size: 20px;
+  margin-top: 0;
+}
+
+@media (max-width:924px) {
+  .img {
+    max-width: 100%;
+    margin-right: 0;
+  } 
+  .summary {
+    text-align: left;
+  }
+
+  .summary > *:nth-child(-n+2) {
+    margin-bottom: 30px;
+  }
+}
+
+
+@media (max-width: 525px) {
+  .header h2 {
+    font-size: 24px;
+  }
+  .header h4 {
+    font-size: 14px;
+  }
+
+  .summary h3 {
+    font-size: 20px;
+  }
+  .summary p {
+    font-size: 18px;
+  }
 }

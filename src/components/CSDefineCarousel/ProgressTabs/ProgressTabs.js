@@ -20,7 +20,7 @@ const ProgressTabs = ({titles, index, setIndex}) => {
   return (
     <div className={styles.progressBar}>
       <div className={styles.headings}>
-        {headings}
+        {window.innerWidth > 1200 ? headings : null}
       </div>
       <ProgressBar index={index} setIndex={setIndex} />
     </div>

@@ -1,14 +1,18 @@
-import React, {useState,useEffect} from 'react';
+import React, {useState,useEffect, useContext} from 'react';
+import MobileContext from '../mobile.context';
 
 const DropDownBorder = ({top}) => {
-  const [width, setWidth] = useState(Math.floor(Math.floor(window.innerWidth)*.5))
+  const {isMobile} = useContext(MobileContext)
+  const [width, setWidth] = useState(!isMobile ? Math.floor(Math.floor(window.innerWidth)*.5) : Math.floor(Math.floor(window.innerWidth)*.8))
+  const [height, setHeight] = useState(window.innerWidth < 526 ? 23 : 42)
   const path = top 
-  ? '42V2H2V42' 
+  ? `42V2H2V42`
   : '2V42H2V2'
 
   useEffect(() => {
     const handleResize = () => {
-      setWidth((Math.floor(Math.floor(window.innerWidth)*.5)))
+      setWidth(!isMobile ? Math.floor(Math.floor(window.innerWidth)*.5) : Math.floor(Math.floor(window.innerWidth)*.8))
+      setHeight(window.innerWidth < 526 ? 23 : 42)
     }
 
     window.addEventListener('resize', handleResize);

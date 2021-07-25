@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import styles from './CSInterviews.module.css';
 import SmallCarousel from '../CSSmallCarousel/CSSmallCarousel';
 import QuoteCard from '../CSQuoteCard/CSQuoteCard';
+import Dropdown from '../CSDropdown/CSDropdown';
+import MobileContext from '../../mobile.context';
 
-const Interviews = ({content, quotes, margin}) => {
+const Interviews = ({content, quotes, margin, needs}) => {
+  const {isMobile} = useContext(MobileContext)
   const cards = quotes.map((q, i) => (
     <QuoteCard
       margin={margin}
@@ -20,6 +23,10 @@ const Interviews = ({content, quotes, margin}) => {
       <SmallCarousel 
         cards={cards}
       />
+      {isMobile && <Dropdown 
+        needs={needs}
+        single={true}
+      />}
     </div>
   )
 }

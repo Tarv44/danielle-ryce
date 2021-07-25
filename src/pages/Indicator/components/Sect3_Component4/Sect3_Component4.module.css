@@ -4,12 +4,13 @@
   align-items: center;
   width: 100%;
   min-height: 518px;
-  padding: 28px 50px;
+  padding: 28px 8px 12px 0;
   background: #ffffff;
 }
 
 .comp4 img {
   z-index: 1;
+  margin-right: 8px;
 }
 
 .comp4 div {
@@ -35,4 +36,31 @@
 
 .right {
   background: var(--color-bg-blue);
+}
+
+@media (max-width: 800px) {
+  .comp4 {
+    min-height: 0;
+  }
+  .comp4 img {
+    width: 200px;
+  }
+
+  .comp4 div {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 650px) {
+  .comp4 p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 475px) {
+  .comp4 p {
+    font-size: 8px;
+  }
+  .comp4 img {
+    width: 100px;
+  }
 }

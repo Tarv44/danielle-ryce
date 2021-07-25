@@ -8,7 +8,7 @@ const QuoteCard = ({img, quote, margin}) => {
       <hr />
       <div className={styles.content}>
         {img && <img src={img} alt="Interviewee" />}
-        <p style={{fontSize: !img && 24 }}>{quote}</p>
+        <p>{quote}</p>
       </div>
       <hr />
     </div>

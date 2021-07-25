@@ -58,3 +58,30 @@
 .content h4::after {
   content: ".";
 }
+
+@media (max-width: 876px) {
+  .content ul {
+    max-width: 75%;
+  }
+
+  .dropdown h4 {
+    font-size: 21px !important;
+  }
+
+  .dropdown li {
+    font-size: 21px;
+  }
+}
+
+@media (max-width: 525px) {
+  .dropdown h3 {
+    font-size: 20px;
+    top: 15px;
+  }
+  .dropdown h4 {
+    font-size: 18px !important;
+  }
+  .dropdown  li {
+    font-size: 18px;
+  }
+}

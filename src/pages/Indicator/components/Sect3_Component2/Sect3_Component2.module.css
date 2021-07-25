@@ -6,23 +6,37 @@
   width: 100%;
   min-height: 518px;
   background: #ffffff;
+  padding: 15px 8px;
 }
 
 .comp2 img {
-  z-index: 1;
+  margin-right: 8px;
 }
 
-.comp2 div {
-  z-index: 2;
+.comp2 > div {
   position: absolute;
-  max-width: 206px;
   text-align: left;
+  padding: 10px;
+}
+
+.left > div {
   padding: 10px;
 }
 
 .comp2 p {
   margin: 0;
   font-size: 18px;
+}
+
+.left {
+  position: absolute;
+  left: 5px;
+}
+
+.div1,
+.div2,
+.div3 {
+  max-width: 206px;
 }
 
 .div1, .div3 {
@@ -32,6 +46,7 @@
 .div1 {
   top: 50px;
   left: 26px;
+  margin-bottom: 50px;
 }
 
 .div2 {
@@ -43,4 +58,46 @@
 .div3 {
   left: 26px;
   bottom: 61px;
+}
+
+@media (max-width: 800px) {
+  .comp2 {
+    min-height: 0;
+    justify-content: center;
+  }
+
+  .comp2 > * {
+    width: 30%;
+  }
+  .comp2 img {
+    width: 200px;
+  }
+
+  .comp2 div {
+    max-width: 100%;
+    position:static;
+  }
+
+  .div2 {
+    max-width: 30%;
+  }
+}
+
+@media (max-width: 650px) {
+  .comp2 p {
+    font-size: 14px;
+  }
+  .left > div,
+  .comp2 > div {
+    padding: 4.3px;
+  }
+  
+}
+@media (max-width: 475px) {
+  .comp2 p {
+    font-size: 8px;
+  }
+  .comp2 img {
+    width: 100px;
+  }
 }

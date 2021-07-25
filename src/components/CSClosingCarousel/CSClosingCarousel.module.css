@@ -1,5 +1,6 @@
 .closing {
   padding: 0 16.8%;
+  margin-bottom: 150px;
 }
 
 .closing h2 {
@@ -25,4 +26,34 @@
 
 .content p:last-of-type {
   margin-bottom: 35px;
+}
+
+@media (max-width: 876px) {
+  .closing {
+    padding: 0 var(--cs-padding-horiz);
+    margin-bottom: 80px;
+  }
+}
+
+@media (max-width: 650px) {
+  .div {
+    background: var(--color-bg-grey);
+    padding: 15px 22px;
+  }
+  .content {
+    padding: 0;
+    min-height: 550px;
+  }
+
+  .closing h2 {
+    font-size: 32px;
+  }
+
+  .content p {
+    font-size: 18px;
+  }
+
+  .content p:first-of-type {
+    margin-top: 0;
+  }
 }

@@ -9,13 +9,15 @@ const ClosingCarousel = ({challenge, perk, lesson}) => {
   return (
     <div className={styles.closing}>
       <h2>What I'm Taking Away From This Project...</h2>
-      <Tabs 
-        index={index}
-        setIndex={setIndex}
-      />
-      <div className={styles.content}>
-        {carousel[index]}
-        <CarouselIndex index={index} length={3} setIndex={setIndex} />
+      <div className={styles.div}>
+        <Tabs 
+          index={index}
+          setIndex={setIndex}
+        />
+        <div className={styles.content}>
+          {carousel[index]}
+          <CarouselIndex index={index} length={3} setIndex={setIndex} />
+        </div>
       </div>
     </div>
   )

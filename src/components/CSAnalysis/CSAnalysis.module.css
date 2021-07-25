@@ -17,6 +17,10 @@
   margin-bottom: 55px;
 }
 
+.sides > div {
+  width: 50%
+}
+
 .closing {
   text-align: left;
   padding: 0 var(--cs-padding-horiz);
@@ -51,4 +55,30 @@
   display: inline-block;
   padding: 5px 20px;
   margin: 0;
+}
+
+@media (max-width: 876px) {
+  .analysis {
+    background: #ffffff;
+    padding: 0;
+  }
+  .sides {
+    flex-direction: column;
+  }
+
+  .sides > div {
+    width: 100%;
+    border-radius: 0;
+    padding: 25px var(--cs-padding-horiz) 50px;
+  }
+}
+
+@media (max-width: 525px) {
+  .closing p, .closing h4, .closing u {
+    font-size: 18px;
+  }
+  .report p,
+  .report u {
+    font-size: 14px;
+  }
 }

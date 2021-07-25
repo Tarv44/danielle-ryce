@@ -112,3 +112,101 @@
 .pains {
   padding: 15px;
 }
+
+@media (max-width: 1400px) {
+  .card p,
+  .card li {
+    font-size: 18px;
+  }
+  .details img {
+    width: 100px;
+    height: 100px;
+  }
+  .chars_str p {
+    margin-top: 65px;
+  }
+
+  .details ul {
+    transform: translateX(-20px) translateY(-8px);
+  }
+}
+
+@media (max-width: 1200px) {
+  .details ul {
+    transform: none;
+  }
+  .details img {
+    width: 140px;
+    height: 140px;
+  }
+  .chars_str p {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 750px) {
+  .card h5 {
+    font-size: 18px;
+  }
+  .card h6 {
+    font-size: 18px;
+  }
+  .card p,
+  .card li {
+    font-size: 14px;
+  }
+  .details img {
+    width: 100px;
+    height: 100px;
+  }
+  .chars_str p {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 580px) {
+  .card {
+    padding: 19px 11px 12px;
+  }
+  .card h5 {
+    font-size: 10.5px;
+  }
+  .card h6 {
+    font-size: 10.5px;
+  }
+  .card p,
+  .card li {
+    font-size: 8.75px;
+  }
+  .details img {
+    width: 65px;
+    height: 65px;
+  }
+  .chars_str p {
+    margin-top: 0;
+    /* transform: translateY(-); */
+  }
+  .goals {
+    transform: none;
+    margin-bottom: 0;
+  }
+  .card > div:nth-child(-n + 2) {
+    margin-bottom: 10px  ;
+  }
+  .details ul {
+    margin-top: 20px;
+    transform: translateX(-15px);
+  }
+
+  .needs {
+    padding: 10px 12px 15px;
+  }
+  .pains {
+    padding: 10px 4px;
+    margin-top: 10px;
+    min-height: 100%;
+  }
+  .card > div {
+    margin: 0;
+  }
+}
