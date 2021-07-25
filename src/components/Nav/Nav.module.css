@@ -19,6 +19,10 @@
     display: none;
 }
 
+.icons {
+    display: none;
+}
+
 @media (max-width: 876px) {
     .nav {
         flex-direction: column;
@@ -35,5 +39,9 @@
     .link {
         margin-right: 30px;
         margin-bottom: 20px;
+    }
+    .icons {
+        display: inline-block;
+        margin-right: 30px;
     }
 }

@@ -1,0 +1,7 @@
+.icons a {
+  margin-right: 15px;
+}
+
+.icons a:last-child {
+  margin-right: 0;
+}
