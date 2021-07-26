@@ -1,5 +1,5 @@
 import React from 'react';
-import Danielle from '../../../images/prof-pic.svg';
+import Danielle from '../../../images/prof-pic.png';
 import styles from './AboutHeader.module.css';
 
 const AboutHeader = () => {

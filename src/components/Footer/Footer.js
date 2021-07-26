@@ -10,6 +10,7 @@ const Footer = () => {
         <a target="_blank" rel="noreferrer" href="https://dribbble.com/daniellekryce">Dribble</a>
         <a target="_blank" rel="noreferrer" href="https://www.behance.net/danielleryce">Behance</a>
       </div>
+      <p className={styles.p}>daniellekryce@gmail.com</p>
       <div className={styles.pattern}></div>
     </footer>
   )

@@ -1,8 +1,8 @@
 import React from 'react';
 import Header from '../../../components/CSHeader/CSHeader';
 import Intro from '../../../components/CSIntro/CSIntro';
-import KellerMac from '../../../images/keller-laptop.svg';
-import KausPhones from '../../../images/keller-phones.svg';
+import KellerMac from '../../../images/keller-laptop.png';
+import KausPhones from '../../../images/keller-phones.png';
 
 const Sect1 = () => {
   return (
@@ -15,7 +15,7 @@ const Sect1 = () => {
           link='https://www.figma.com/proto/vZbsmRQB4x5BSzIeUlVtPK/Keller-Strings-Prototype?page-id=0%3A1&node-id=1%3A132&viewport=343%2C359%2C0.125&scaling=scale-down-width'
         />
         <Intro 
-          title='Responsiv Ecommerce Website Full Redesign'
+          title='Responsive Ecommerce Website Full Redesign'
           role='UX Designer / 4 Week Sprint / Mar - Apr ’21 '
           img={KausPhones}
           color='var(--color-blue)'

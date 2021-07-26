@@ -22,15 +22,21 @@
   margin-bottom: 0;
 }
 
-.content p {
+.content p,
+.content i {
   font-size: 20px;
   margin-top: 0;
 }
 
 @media (max-width: 1200px) {
+  .content {
+    margin-right: 0;
+  }
   .section > div,
-  .section > img {
+  .section > img,
+  .section > div > img {
     max-width: 100%;
+    width: 100%
   }
   .content > h4 {
     text-align: center;
@@ -39,7 +45,8 @@
 }
 
 @media (max-width: 525px) {
-  .content > p {
+  .content > p,
+  .content i {
     font-size: 16px;
   }
   .content > h4 {

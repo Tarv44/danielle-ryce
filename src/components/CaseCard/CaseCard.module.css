@@ -51,3 +51,10 @@
 .cover h4 {
   font-size: 32px;
 }
+
+@media (max-width: 876px) {
+  .card:hover .cover {
+    opacity: 0;
+    top: -5%;
+  }
+}

@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import gblStyles from '../../../global.module.css';
-import Signup from '../../../images/indicator-signup.svg';
+import Signup from '../../../images/indicator-signup.png';
 import PrototypeLink from '../../../components/CSPrototypeLink';
 import MobileContext from '../../../mobile.context';
 

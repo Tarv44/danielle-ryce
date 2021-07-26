@@ -26,6 +26,10 @@
   background: var(--color-bg-blue);
 }
 
+.icon {
+  width: 150px;
+}
+
 @media (max-width: 650px) {
   .tab {
     display: none;
@@ -41,5 +45,9 @@
 
   .tab h3 {
     font-size: 24px;
+  }
+
+  .icon {
+    width: 100px;
   }
 }

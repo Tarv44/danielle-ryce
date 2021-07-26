@@ -16,7 +16,8 @@
   margin-bottom: 0;
 }
 
-.content > p {
+.content > p,
+.content > p > span {
   font-size: 20px;
   margin-top: 0;
 }
@@ -32,6 +33,7 @@
 @media (max-width: 1200px) {
   .content {
     max-width: 100%;
+    margin-right: 0;
   }
   .content > h4 {
     text-align: center;
@@ -46,7 +48,8 @@
 }
 
 @media (max-width: 525px) {
-  .content > p {
+  .content > p,
+  .content > p > span {
     font-size: 16px;
   }
   .content > h4 {

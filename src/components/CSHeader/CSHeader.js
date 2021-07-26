@@ -7,12 +7,12 @@ const Header = (props) => {
       <div className={styles.intro}>
         <h1>{props.title}</h1>
         <h2>Case Study</h2>
-        <img 
-          style={{background: props.color}} 
-          className={styles.img} 
-          src={props.img} 
-          alt={props.alt} 
-        />
+        <div style={{background: props.color}} className={styles.img} >
+          <img 
+            src={props.img} 
+            alt={props.alt} 
+          />
+        </div>
       </div>
       <p>View prototype <u><a
         target="_blank"

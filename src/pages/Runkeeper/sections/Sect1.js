@@ -1,8 +1,8 @@
 import React from 'react';
 import Header from '../../../components/CSHeader/CSHeader';
 import Intro from '../../../components/CSIntro/CSIntro';
-import RunkeeperPhones from '../../../images/runkeeper-phones-intro.svg';
-import RunkeeperPhones2 from '../../../images/runkeeper-phones-overview.svg';
+import RunkeeperPhones from '../../../images/runkeeper-phones-intro.png';
+import RunkeeperPhones2 from '../../../images/runkeeper-phones-overview.png';
 
 const Sect1 = () => {
   return (

@@ -62,7 +62,6 @@ const getData = () => {
       'Transparency',
       'Personal connection',
       'Customer-first service',
-      'Great customer ratings',
       'Smooth claims process',
     ],
     closing: null,

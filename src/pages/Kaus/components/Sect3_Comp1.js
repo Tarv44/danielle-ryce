@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import SmallCarousel from '../../../components/CSSmallCarousel/CSSmallCarousel';
 import PersonaCard from '../../../components/CSPersonaCard/CSPersonaCard';
 import Profile1 from '../../../images/kaus-persona-1.jpg';
 import Profile2 from '../../../images/kaus-persona-2.jpg';
+import handleResize from '../../../handle-resize';
 
 const Component1 = () => {
+  const [isVert, setIsVert] = useState(window.innerWidth <= 1200)
   const data1 ={
     name: 'Lindsey Davis',
     details: [
@@ -95,9 +97,14 @@ const Component1 = () => {
     pains={data2.pains}
     />
   ]
+
+  useEffect(() => {
+    handleResize(() => setIsVert(window.innerWidth <= 1200))
+  })
   return (
     <div>
-      <SmallCarousel cards={cards} />
+      {!isVert && <SmallCarousel cards={cards} />}
+      {isVert && cards[0]}
     </div>
   )
 }

@@ -2,7 +2,6 @@
   padding: 0 8.4% 20px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
 .compAnal h4 {
@@ -27,8 +26,14 @@
 
 .compAnal img {
   max-width: 100%;
+  margin-top: 0%;
 }
 
+@media (max-width:1200px) {
+  .compAnal img {
+    margin-top: 10%;
+  }
+}
 @media (max-width: 876px) {
   .compAnal {
     background: var(--color-bg-grey);

@@ -55,7 +55,7 @@ const Sect5 = () => {
         <p style={{marginBottom: 50}}>Even though they noted that it was mostly a simple process, there were some common sticking points, especially when it came to vocabulary and comparing the policies against Kaus’ competitors.</p>
       </div>
       <div style={mapLinkStyle}>
-        <p style={{margin: 0, fontSize: 18}}>Want to look at the affinity map in detail? Go <u><a style ={{fontSize: 18}} href='https://miro.com/app/board/o9J_lUZR3L4=/'>here</a></u>.</p>
+        <p style={{margin: 0, fontSize: 18}}>Want to look at the affinity map in detail? Go <u><a style ={{fontSize: 18}} target="_blank" rel="noreferrer" href='https://miro.com/app/board/o9J_lUZR3L4=/'>here</a></u>.</p>
       </div>
     </section>
   )

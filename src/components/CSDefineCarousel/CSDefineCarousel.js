@@ -44,7 +44,7 @@ const DefineCarousel = ({title, desc, carousel_data}) => {
         handleRight={handleRight}
       />
       {window.innerWidth > 1200 ? null 
-        : <CarouselIndex length={carousel_data.length} index={index} setIndex={setIndex}  arrowsOff={true}/>}
+        : <CarouselIndex length={carousel_data.length} index={index} setIndex={setIndex}  arrowsOff={false}/>}
     </section>
   )
 }

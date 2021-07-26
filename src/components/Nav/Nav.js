@@ -3,7 +3,6 @@ import {NavLink} from 'react-router-dom';
 import styles from './Nav.module.css';
 import Exit from '../../icons/exit.svg';
 import MobileContext from '../../mobile.context';
-import MobileIcons from '../MobileIcons/MobileIcons';
 
 const Nav = ({home, about, setIsOpen}) => {
     const {isMobile} = useContext(MobileContext)
@@ -18,9 +17,6 @@ const Nav = ({home, about, setIsOpen}) => {
             <NavLink onClick={closeMenu} className={home ? `${styles.active} ${styles.link}`: styles.link} to={'/'}>projects.</NavLink>
             <NavLink onClick={closeMenu} className={about ? `${styles.active} ${styles.link}`: styles.link} to={'/about'}>about.</NavLink>
             <a onClick={closeMenu} className={styles.link} href={'mailto:daniellekryce@gmail.com'}>contact.</a>
-            <div className={styles.icons}>
-                <MobileIcons />
-            </div>
         </nav>
     )
 }

@@ -9,6 +9,7 @@
   .bio {
     font-size: 16px;
     border-radius: 10px;
+    padding: 20px var(--padding-horiz);
     margin: 0 var(--padding-horiz)
   }
 }

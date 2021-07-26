@@ -5,7 +5,7 @@
 
 .wheel {
   position: relative;
-  margin: auto;
+  margin: auto auto 88px;
   max-width: 540px;
 }
 

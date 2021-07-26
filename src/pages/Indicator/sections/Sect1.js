@@ -1,8 +1,8 @@
 import React from 'react';
-import IndicatorDevices from '../../../images/indicator-devices.svg';
+import IndicatorDevices from '../../../images/indicator-devices.png';
 import Header from '../../../components/CSHeader/CSHeader';
 import Intro from '../../../components/CSIntro/CSIntro';
-import Devices from '../../../images/indicator-devices2.svg';
+import Devices from '../../../images/indicator-devices2.png';
 
 const Sect1 = () => {
   return (
@@ -23,8 +23,8 @@ const Sect1 = () => {
         color='var(--color-green)'
         title1='Objective'
         title2='Final Solution'
-        background='Kaus has been selling insurance policies business to business for the past 30 years. They sell prepared packages, with 350+ offerings, which allows them to provide insurance at low rates. Kaus wants to expand by selling policies to individuals.'
-        objective='To tap into the digital age, they know they need to reach a younger audience. Kaus is willing to break industry standards to provide their customers with a simple, efficient insurance shopping experience.'
+        background='For the final project of Designlab’s UX Academy, we were prompted to create an app. As an independent musician myself, I personally know how overwhelming it feels to keep up with business related tasks. My motivation for Indicator is to help artists succeed.'
+        objective='Monitor tangible results in their dashboard by tracking certain statistics. Receive suggested action items to boost these numbers. Connection with a real-world manager to help them out that extra mile.'
       />
     </section>
   )

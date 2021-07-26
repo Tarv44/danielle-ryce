@@ -1,8 +1,8 @@
 import React from 'react';
 import gblStyles from '../../../global.module.css';
 import LargeCarousel from '../../../components/CSLargeCarousel/CSLargeCarousel';
-import NewDevices from '../../../images/keller-new-devices.svg';
-import OldDevices from '../../../images/keller-old-devices.svg';
+import NewDevices from '../../../images/keller-new-devices.png';
+import OldDevices from '../../../images/keller-old-devices.png';
 
 // import styles from './Sect5.module.css';
 

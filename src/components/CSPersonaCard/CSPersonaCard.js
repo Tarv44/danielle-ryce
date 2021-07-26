@@ -6,9 +6,9 @@ const PersonaCard = (props) => {
 
   const detail_lis = details.map((d,i) => <li key={i}>{d}</li>)
   const chars_str = chars.join(' - ')
-  const goal_lis = goals.map((g, i) => <li key={i}>{g}</li>)
-  const need_lis = needs.map((n, i) => <li key={i}>{n}</li>)
-  const pain_lis = pains.map((p, i) => <li key={i}>{p}</li>)
+  const goal_lis = goals.map((g, i) => <li key={i}><span>{g}</span></li>)
+  const need_lis = needs.map((n, i) => <li key={i}><span>{n}</span></li>)
+  const pain_lis = pains.map((p, i) => <li key={i}><span>{p}</span></li>)
   return (
     <div className={styles.card}>
       <div className={styles.profileDetails}>

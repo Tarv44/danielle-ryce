@@ -1,9 +1,9 @@
 import React from 'react';
 import CaseCard from '../../CaseCard/CaseCard';
-import KausDevices from '../../../images/kaus-devices.svg';
-import RunkeeperDevices from '../../../images/runkeeper-devices.svg'
-import KellerDevices from '../../../images/keller-devices.svg'
-import IndicatorDevices from '../../../images/indicator-devices.svg'
+import KausDevices from '../../../images/kaus-devices.png';
+import RunkeeperDevices from '../../../images/runkeeper-devices.png'
+import KellerDevices from '../../../images/keller-devices.png'
+import IndicatorDevices from '../../../images/indicator-devices.png'
 import styles from './CardSect.module.css';
 
 const CardSect = () => {

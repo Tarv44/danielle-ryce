@@ -68,7 +68,7 @@ const closing = () => {
     <>
       <p>All participants raved about the benefits of running. <i>“You may hate it at first, but after you feel great!” “It’s cheap and simple!” “It’s nice to get outside!”</i> However, when it came to strength training, <span style={{...med, ...blue}}>only two of the participants were currently incorporating it into their routine.</span> The other 2 stopped strength training after the pandemic hit.</p>
       <p>3 of the participants admitted they feel a <i style={{...blue, ...med}}>little lost and overwhelmed</i> when it comes to choosing a workout, and <span style={{...green,...med}}>they would prefer to just have an expert “tell them what to do.”</span> One of the participants was a former personal trainer and even she said she would rather follow workout videos instead of creating her own routines, due to the convenience.</p>
-      <h4>These users need <u style={blue}>structure</u> and <u>convenience</u>.</h4>
+      <h4>These users need <u style={blue}>structure</u> and <u style={blue}>convenience</u>.</h4>
     </>
   )
 }

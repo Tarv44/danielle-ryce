@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
   margin-bottom: 70px;
+  padding-top: 35px;;
 }
 
 .hobbies h2 {
@@ -32,6 +33,7 @@
 
   .hobbies ol {
     flex-direction: column;
+    padding: 0;
   }
 
   .hobbies li {

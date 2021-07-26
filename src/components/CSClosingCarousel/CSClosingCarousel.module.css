@@ -6,7 +6,7 @@
 .closing h2 {
   text-transform: uppercase;
   color: var(--color-blue);
-  font-size: 45px;
+  font-size: 38px;
 }
 
 .content {
@@ -38,7 +38,7 @@
 @media (max-width: 650px) {
   .div {
     background: var(--color-bg-grey);
-    padding: 15px 22px;
+    padding: 0px 22px 15px;
   }
   .content {
     padding: 0;

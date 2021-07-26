@@ -25,7 +25,9 @@
   content: "."
 }
 
-.card p, .card li {
+.card p, 
+.card li ,
+.card span {
   font-size: 20px;
 }
 
@@ -85,6 +87,13 @@
   list-style: inside;
 }
 
+.goals span,
+.needs span,
+.pains span {
+  position: relative;
+  left: -.5em;
+} 
+
 .needs ul,
 .pains ul {
   text-align: left;
@@ -116,7 +125,8 @@
 
 @media (max-width: 1400px) {
   .card p,
-  .card li {
+  .card li,
+  .card span {
     font-size: 18px;
   }
   .details img {
@@ -176,7 +186,8 @@
     font-size: 18px;
   }
   .card p,
-  .card li {
+  .card li,
+  .card span {
     font-size: 14px;
   }
   .details img {
@@ -202,7 +213,8 @@
     font-size: 10.5px;
   }
   .card p,
-  .card li {
+  .card li,
+  .card span {
     font-size: 8.75px;
   }
   .details img {
