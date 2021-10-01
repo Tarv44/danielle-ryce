@@ -14,7 +14,7 @@
   font-size: 32px;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: .3em;
+  margin-bottom: 0.3em;
 }
 
 .header h4 {
@@ -36,8 +36,9 @@
   margin-right: 40px;
 }
 img.img {
-  background: rgba(0,0,0,0);
+  background: rgba(0, 0, 0, 0);
   width: 100%;
+  object-fit: contain;
 }
 
 .summary {
@@ -60,20 +61,19 @@ img.img {
   margin-top: 0;
 }
 
-@media (max-width:876px) {
+@media (max-width: 876px) {
   .img {
     max-width: 100%;
     margin-right: 0;
-  } 
+  }
   .summary {
     text-align: left;
   }
 
-  .summary > *:nth-child(-n+2) {
+  .summary > *:nth-child(-n + 2) {
     margin-bottom: 30px;
   }
 }
-
 
 @media (max-width: 525px) {
   .header h2 {
