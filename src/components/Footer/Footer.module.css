@@ -32,7 +32,7 @@
     display: none;
   }
   .pattern {
-    background-image: url('../../images/footer-pattern-mobile.svg');
+    background-image: url('../../images/footer-pattern-mobile.png');
     height: 150px;
   }
 }

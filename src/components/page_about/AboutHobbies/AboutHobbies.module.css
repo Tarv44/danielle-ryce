@@ -14,16 +14,13 @@
 
 .hobbies ol {
   display: flex;
+  justify-content: space-between;
   margin-bottom: 65px;
   padding: 0 40px;
 }
 
 .hobbies li {
-  margin-right: 100px
-}
-
-.hobbies li:last-child {
-  margin-right: 0;
+  max-width: 32%;
 }
 
 @media (max-width: 876px) {
@@ -42,6 +39,7 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 15px;
     border: 1px solid #DEDEDE;
+    max-width: 100%;
   }
 
   .hobbies li:last-child {
